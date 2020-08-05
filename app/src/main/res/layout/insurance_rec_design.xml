@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:id="@+id/ivpolicy"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_baseline_policy_24"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/ivpolicy"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:id="@+id/tvPolicy"
+                android:fontFamily="@font/fontawesome_webfont"
+                android:text="Policy No: "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tvPolicy"
+                android:layout_marginTop="8dp"
+                android:id="@+id/tvPolicyNO"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:fontFamily="@font/fontawesome_webfont"
+                android:text="CB202-2345"/>
+
+            <ImageView
+                android:id="@+id/ivCalendar"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/ic_date_yellow"
+                android:layout_below="@+id/ivpolicy"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/ivCalendar"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:id="@+id/tvPaymentDue"
+                android:layout_below="@+id/ivpolicy"
+                android:fontFamily="@font/fontawesome_webfont"
+                android:text="Payment Due Date: "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tvPaymentDue"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:id="@+id/tvPaymentDueDate"
+                android:layout_below="@+id/ivpolicy"
+                android:textColor="#000"
+                android:fontFamily="@font/fontawesome_webfont"
+                android:text="6/25/2020"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@id/ivCalendar"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/fontawesome_webfont"
+                android:text="INFS"
+                android:textColor="#fff"
+                android:background="#496075"
+                android:id="@+id/btnINFS"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="12dp"
+                android:background="#22B166"
+                android:layout_below="@id/ivCalendar"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/btnINFS"
+                android:fontFamily="@font/fontawesome_webfont"
+                android:text="Premium: ₹ 7,579"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:id="@+id/btnPremium"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

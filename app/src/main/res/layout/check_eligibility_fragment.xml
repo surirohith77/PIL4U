@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Calculate housing loan eligibility?"
+        android:fontFamily="@font/alata_regular"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Calculate your borrowing eligibility by submitting your details below"
+        android:fontFamily="@font/alata_regular"
+        android:textSize="13sp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etag"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Your age"
+            android:id="@+id/etage"
+            android:padding="15dp"
+            android:textSize="12sp"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinnerEmployement"
+        android:layout_below="@+id/ivicon"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etIncom"
+        android:layout_marginTop="5dp"
+     android:layout_gravity="center"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Net Income"
+            android:id="@+id/etIncome"
+            android:padding="15dp"
+            android:textSize="12sp"
+            android:inputType="numberDecimal"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinnerIncome"
+        android:layout_below="@+id/ivicon"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etTenur"
+        android:layout_marginTop="3dp"
+        android:layout_gravity="center"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Tenure"
+            android:text="24"
+            android:padding="15dp"
+            android:textSize="12sp"
+            android:id="@+id/etTenure"
+            android:inputType="numberDecimal"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinnerTime"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etRateofInteres"
+        android:layout_marginTop="3dp"
+        android:layout_gravity="center"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Rate of Interest %"
+            android:text="8.9"
+            android:padding="15dp"
+            android:textSize="12sp"
+            android:id="@+id/etRateofInterest"
+            android:inputType="numberDecimal"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/alata_regular"
+        android:text="Calculate"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:background="@drawable/btn_bg_site"
+        android:id="@+id/btnCalculate"
+        android:textStyle="bold"
+        />
+
+    <com.anychart.AnyChartView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:id="@+id/anychartview"
+        android:layout_marginTop="15dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/realtivecalValue"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="You could borrow upto"
+            android:textAlignment="center"
+            android:fontFamily="@font/alata_regular"
+            android:id="@+id/tvMonthlyEM"
+            android:textSize="12sp"
+            android:layout_toEndOf="@+id/realtiveBank"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:text="Payable Amount"
+            android:textAlignment="center"
+            android:fontFamily="@font/alata_regular"
+            android:id="@+id/tvTotalpaybl"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="₹ 67,16,630"
+            android:textAlignment="center"
+            android:fontFamily="@font/alata_regular"
+            android:id="@+id/tvMonthlyEMi"
+            android:layout_below="@+id/tvMonthlyEM"
+            android:textSize="14sp"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_alignParentEnd="true"
+            android:text="₹ 1,44,00,000"
+            android:textAlignment="center"
+            android:fontFamily="@font/alata_regular"
+            android:id="@+id/tvTotalpayble"
+            android:textSize="14sp"
+            android:textColor="#000"
+            android:layout_below="@+id/tvTotalpaybl"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monthly EMI ₹ 60,000"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/alata_regular"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tvMonthlyEMi"
+            android:textSize="14sp"
+            android:textColor="#000"
+            />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="100dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/alata_regular"
+        android:text="Apply For Loan"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:background="@drawable/btn_bg_bank"
+        android:id="@+id/btnApplyLoan"
+        android:textStyle="bold"
+        />
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

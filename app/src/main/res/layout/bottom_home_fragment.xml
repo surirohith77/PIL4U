@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<include layout="@layout/toolbar_for_main_activity"
+            />-->
+
+
+        <!--<androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivcard"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/ivmagnifier"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/filter" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toEndOf="@+id/ivmagnifier"
+                    android:hint="Search for flats, villas..."
+                    android:textSize="16sp"
+                    android:background="@null"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>-->
+        <!--
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/seekbar_track"
+                    android:thumb="@drawable/seekbar_thumb"
+                    android:indeterminate="false"
+                    />-->
+
+        <!--<org.florescu.android.rangeseekbar.RangeSeekBar
+            android:id="@+id/rangeseekabr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Residential"
+                android:fontFamily="@font/alata_regular"
+                android:textSize="16sp"
+                android:textColor="@color/color_site"
+                android:id="@+id/tvResidential" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Commercial"
+                android:fontFamily="@font/alata_regular"
+                android:textSize="16sp"
+                android:layout_toEndOf="@+id/tvResidential"
+                android:layout_marginStart="10dp"
+                android:textColor="#d5d5d6"
+                android:id="@+id/tvCommercial" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rental"
+                android:fontFamily="@font/alata_regular"
+                android:textSize="16sp"
+                android:layout_toEndOf="@+id/tvCommercial"
+                android:layout_marginStart="10dp"
+                android:textColor="#d5d5d6"
+                android:id="@+id/tvRental" />
+
+
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearResidential"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="2dp"
+                    app:cardCornerRadius="20dp"
+                    android:id="@+id/cardHomeLoan"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+
+                        <ImageView
+                            android:id="@+id/ivicon"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/building_2"
+                            android:layout_centerHorizontal="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="Apartment"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/alata_regular"
+                            android:textSize="9sp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/ivicon"
+                            />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="2dp"
+                    app:cardCornerRadius="20dp"
+                    android:id="@+id/cardBusinessLoan"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/residential"
+                            android:id="@+id/ivicon2"
+                            android:layout_centerHorizontal="true"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="Villas"
+                            android:fontFamily="@font/alata_regular"
+                            android:textSize="9sp"
+                            android:textAlignment="center"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/ivicon2"
+                            />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="2dp"
+                    app:cardCornerRadius="20dp"
+                    android:id="@+id/cardPersonalLoan"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/home8"
+                            android:id="@+id/ivicon3"
+                            android:layout_centerHorizontal="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="Ind House"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/alata_regular"
+                            android:textSize="9sp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/ivicon3"
+                            />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="2dp"
+                    app:cardCornerRadius="20dp"
+                    android:id="@+id/cardPersonalLoan"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/down_arrow_blue"
+                            android:id="@+id/ivicon4"
+                            android:layout_centerHorizontal="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="Plots"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/alata_regular"
+                            android:textSize="9sp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/ivicon4"
+                            />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- <androidx.cardview.widget.CardView
+                     android:layout_width="90dp"
+                     android:layout_height="wrap_content"
+                     app:cardBackgroundColor="@color/colorPrimary"
+                     android:layout_marginTop="10dp"
+                     android:layout_marginStart="10dp"
+                     android:layout_marginBottom="2dp"
+                     app:cardCornerRadius="20dp"
+                     android:id="@+id/cardOthers"
+                     >
+                     <RelativeLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="5dp">
+
+                         <ImageView
+                             android:layout_width="40dp"
+                             android:layout_height="30dp"
+                             android:src="@drawable/down_arrow_blue"
+                             android:id="@+id/ivicon4"
+                             android:layout_centerHorizontal="true"/>
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginStart="10dp"
+                             android:layout_marginEnd="10dp"
+                             android:text="Others"
+                             android:fontFamily="@font/alata_regular"
+                             android:textSize="9sp"
+                             android:layout_centerHorizontal="true"
+                             android:layout_below="@+id/ivicon4"
+                             />
+
+                     </RelativeLayout>
+
+                 </androidx.cardview.widget.CardView>-->
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearCommercial"
+              android:visibility="gone"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="2dp"
+                    app:cardCornerRadius="20dp"
+                    android:id="@+id/cardHomeLoan"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+
+                        <ImageView
+                            android:id="@+id/ivicon"
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/office"
+                            android:layout_centerHorizontal="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="Office space"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/alata_regular"
+                            android:textSize="9sp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/ivicon"
+                            />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="2dp"
+                    app:cardCornerRadius="20dp"
+                    android:id="@+id/cardBusinessLoan"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/detail"
+                            android:id="@+id/ivicon2"
+                            android:layout_centerHorizontal="true"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="Shop Space"
+                            android:fontFamily="@font/alata_regular"
+                            android:textSize="9sp"
+                            android:textAlignment="center"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/ivicon2"
+                            />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="2dp"
+                    app:cardCornerRadius="20dp"
+                    android:id="@+id/cardPersonalLoan"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/land"
+                            android:id="@+id/ivicon3"
+                            android:layout_centerHorizontal="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="Lease"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/alata_regular"
+                            android:textSize="9sp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/ivicon3"
+                            />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="2dp"
+                    app:cardCornerRadius="20dp"
+                    android:id="@+id/cardPersonalLoan"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/industry"
+                            android:id="@+id/ivicon4"
+                            android:layout_centerHorizontal="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="Industry pur"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/alata_regular"
+                            android:textSize="9sp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/ivicon4"
+                            />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+             <!--   <androidx.cardview.widget.CardView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="2dp"
+                    app:cardCornerRadius="20dp"
+                    android:id="@+id/cardPersonalLoan"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/storage"
+                            android:id="@+id/ivicon3"
+                            android:layout_centerHorizontal="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="Storage"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/alata_regular"
+                            android:textSize="9sp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/ivicon3"
+                            />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="2dp"
+                    app:cardCornerRadius="20dp"
+                    android:id="@+id/cardPersonalLoan"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/hospita"
+                            android:id="@+id/ivicon4"
+                            android:layout_centerHorizontal="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="Hospitality"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/alata_regular"
+                            android:textSize="9sp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/ivicon4"
+                            />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>-->
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:id="@+id/relativeSeek">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                    android:id="@+id/rangeSeekbar6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:left_thumb_color="@color/colorAccent"
+                    app:right_thumb_color="@color/colorAccent"
+                    app:left_thumb_color_pressed="@color/colorAccent"
+                    app:right_thumb_color_pressed="@color/colorAccent"
+                    app:bar_highlight_color="@color/colorAccent"
+                    />
+
+                <TextView
+                    android:id="@+id/textMin6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_below="@id/rangeSeekbar6"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/alata_regular"
+                    android:textSize="12sp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:id="@+id/textMax6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_below="@id/rangeSeekbar6"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/alata_regular"
+                    android:textSize="12sp"
+                    android:textColor="#000"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!--   <androidx.viewpager.widget.ViewPager
+               android:id="@+id/slider_pager"
+               android:layout_width="match_parent"
+               android:layout_height="200dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginEnd="10dp"
+               android:layout_marginStart="10dp"
+               />
+
+           <com.google.android.material.tabs.TabLayout
+               app:tabGravity="center"
+               android:id="@+id/indicator"
+               app:tabBackground="@drawable/indicator_selector"
+               app:tabIndicatorHeight="0dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               >
+           </com.google.android.material.tabs.TabLayout>-->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="10dp">
+
+
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:sliderAnimationDuration="600"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderIndicatorAnimationDuration="600"
+                app:sliderIndicatorEnabled="true"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorMargin="15dp"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="3dp"
+                app:sliderIndicatorRadius="2dp"
+                app:sliderIndicatorSelectedColor="#5A5A5A"
+                app:sliderIndicatorUnselectedColor="#FFF"
+                app:sliderScrollTimeInSec="1"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:visibility="gone">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rvmain"
+
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Advertise"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/baloobhai_regular"/>
+
+        <!--  <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Top ads nead by you"
+              android:layout_marginTop="10dp"
+              android:layout_marginStart="15dp"
+              android:textSize="16sp"
+              android:fontFamily="@font/baloobhai_regular"/>-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rvAds"
+                android:layoutAnimation="@anim/layout_animation_right_to_left"
+                />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Featured Properties"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/baloobhai_regular"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Handpicked properties by our team"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/baloobhai_regular"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rvProperties"
+
+                />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent Views"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/baloobhai_regular"/>
+
+        <!--  <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Top ads nead by you"
+              android:layout_marginTop="10dp"
+              android:layout_marginStart="15dp"
+              android:textSize="16sp"
+              android:fontFamily="@font/baloobhai_regular"/>-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rvRecents"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More Properties"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:textSize="18sp"
+            android:id="@+id/tvMoreProperties"
+            android:fontFamily="@font/baloobhai_regular"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/relativeMoreProperties">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rvBottomdata"
+                android:layoutAnimation="@anim/layout_animation_right_to_left"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

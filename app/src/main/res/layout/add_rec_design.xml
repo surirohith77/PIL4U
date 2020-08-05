@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="20dp"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/insidehouse1"
+                android:id="@+id/imageview"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvSqrt"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:fontFamily="@font/fontawesome_webfont"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="8dp"
+                android:text="1200sq.ft"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvBeds"
+                android:layout_toEndOf="@+id/tvSqrt"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:fontFamily="@font/fontawesome_webfont"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="3 Beds"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvBaths"
+                android:layout_toEndOf="@+id/tvBeds"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="#fff"
+                android:fontFamily="@font/fontawesome_webfont"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="1 Bath"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPrice"
+                android:layout_alignParentEnd="true"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/fontawesome_webfont"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="\u20B913000"/>
+
+            <!--<ImageView
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/tvSqrt"
+                android:src="@drawable/ic_location"
+                android:id="@+id/ivlocation"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                />
+-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvLocatin"
+               android:layout_alignParentBottom="true"
+                android:textSize="12sp"
+                android:textColor="#fff"
+                android:fontFamily="@font/fontawesome_webfont"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="1421 San Pedro St, Los Angeles, CA 90015"/>
+
+           <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvForDesignPurpose"
+                android:layout_below="@+id/imageview"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:fontFamily="@font/fontawesome_webfont"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:text=""/>-->
+
+
+
+        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

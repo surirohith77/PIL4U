@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_twotone_apartment"
+        android:title="Property"
+        />
+
+
+    <item
+        android:id="@+id/insurance"
+        android:icon="@drawable/ic_twotone_policy"
+        android:title="Insurance"
+        />
+
+
+    <item
+        android:id="@+id/loans"
+        android:icon="@drawable/ic_loans_two_tone"
+        android:title="Loans" />
+
+    <item
+        android:id="@+id/advertise"
+        android:icon="@drawable/ic_campaign_two_tone"
+        android:title="Advertise" />
+
+
+   <!-- <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_house"
+        android:title="Property"
+        />
+
+
+    <item
+        android:id="@+id/insurance"
+        android:icon="@drawable/insurance4"
+        android:title="Insurance"
+        />
+
+
+    <item
+        android:id="@+id/loans"
+        android:icon="@drawable/loans2"
+        android:title="Loans" />
+
+    <item
+        android:id="@+id/advertise"
+        android:icon="@drawable/advertise4"
+        android:title="Advertise" />
+-->
+   <!-- <item
+        android:id="@+id/insurance"
+        android:icon="@drawable/loans"
+        android:title="Insurance" />-->
+
+    <!--<item
+        android:id="@+id/loans"
+        android:icon="@drawable/loans"
+        android:title="Loans" />
+
+    <item
+        android:id="@+id/insurance"
+        android:icon="@drawable/insurance"
+        android:title="Insurance" />-->
+
+    <!--<item
+        android:id="@+id/others"
+        android:icon="@drawable/sofa"
+        android:title="Others" />-->
+
+</menu>

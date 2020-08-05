@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <!-- <item
+        android:id="@+id/home"
+        android:icon="@drawable/home2"
+        android:title="Home"
+        />-->
+ <group android:checkableBehavior="single"
+     android:id="@+id/group1">
+
+    <item
+        android:id="@+id/insurance"
+        android:icon="@drawable/insurance4"
+        android:title="Insurance"
+        />
+
+
+
+    <item
+        android:id="@+id/furniture"
+        android:icon="@drawable/bench"
+        android:title="Furniture"
+        />
+
+    </group>
+
+
+    <!--<item
+        android:id="@+id/properties"
+        android:icon="@drawable/real_estate"
+        android:title="My Properties"
+        />-->
+
+ <group android:checkableBehavior="single"
+     android:id="@+id/group2">
+    <item
+        android:id="@+id/properties"
+        android:icon="@drawable/home4"
+        android:title="My Properties"
+        />
+
+    <item
+        android:id="@+id/advertise"
+        android:icon="@drawable/advertise4"
+        android:title="My Advertise"
+        />
+
+    <item
+        android:id="@+id/action"
+        android:icon="@drawable/action2"
+        android:title="My Action"
+        />
+
+    <item
+        android:id="@+id/notification"
+        android:icon="@drawable/notificaiton4"
+        android:title="My Notification"
+        />
+
+ </group>
+
+
+ <group android:checkableBehavior="single"
+     android:id="@+id/group3">
+            <item
+                android:id="@+id/publicc"
+                android:icon="@drawable/public2"
+                android:title="Public"
+                />
+
+            <item
+                android:id="@+id/offer"
+                android:icon="@drawable/offers2"
+                android:title="Offers"
+                />
+
+            <item
+                android:id="@+id/notificationPreference"
+                android:title="Notification Preference"
+                android:icon="@drawable/ic_notification"
+                />
+
+            <item
+                android:id="@+id/helpCenter"
+                android:title="Help Center"
+                android:icon="@drawable/help"
+                />
+
+            <item
+                android:id="@+id/Legal"
+                android:title="Legal"
+                android:icon="@drawable/legal2"
+                />
+
+ </group>
+
+
+</menu>

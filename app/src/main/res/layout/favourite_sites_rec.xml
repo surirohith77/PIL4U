@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/cardview"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+          >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/imageview"
+                android:scaleType="fitXY"
+                android:src="@drawable/p5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvBuildingType"
+                android:layout_toEndOf="@+id/imageview"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/alata_regular"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="Renovated Apartment"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_toEndOf="@+id/imageview"
+                android:layout_below="@+id/tvBuildingType"
+                android:src="@drawable/ic_location"
+                android:id="@+id/ivlocation"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvLocatin"
+                android:layout_toEndOf="@+id/ivlocation"
+                android:textSize="12sp"
+                android:layout_below="@+id/tvBuildingType"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/alata_regular"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="5dp"
+                android:text="1421 San Pedro St, Los Angeles, CA 90015"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPrice"
+                android:textColor="@color/colorIcon"
+                android:fontFamily="@font/alata_regular"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="15dp"
+                android:text="$13000"/>
+
+           <!-- <ImageView
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/tvLocatin"
+                android:src="@drawable/ic_baseline_delete_24"
+                android:id="@+id/ivDelete"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="16dp"/>-->
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

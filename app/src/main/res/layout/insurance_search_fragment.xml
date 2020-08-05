@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <!--<include layout="@layout/toolbar_for_main_activity"
+            />-->
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardSearch"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="2dp"
+            app:cardElevation="3dp"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/ivmagnifier"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/filter" />
+
+               <!-- <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toEndOf="@+id/ivmagnifier"
+                    android:text="Search for flats, villas..."
+                    android:textSize="16sp"
+                    android:id="@+id/etSearch"
+                    android:background="@null"/>-->
+
+                <AutoCompleteTextView
+                    android:id="@+id/actv"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="wrap_content"
+                    android:completionThreshold="1"
+                    android:layout_toEndOf="@+id/ivmagnifier"
+                    android:background="@null"
+                    android:textSize="16sp"
+                    android:inputType="textCapWords"
+                    android:fontFamily="@font/alata_regular"
+                    android:hint="Search for Insurance..."
+                    android:popupBackground="@color/colorAccent" />
+
+                <!--<TextView
+                    android:id="@+id/text_view_countries"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="16dp"
+                    android:text="Countries"
+                    android:textSize="20sp"
+                    android:completionHint="Search for flats, villas..."
+                           android:dropDownAnchor="@id/text_view_countries"/>-->
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+<!--
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/seekbar_track"
+            android:thumb="@drawable/seekbar_thumb"
+            android:indeterminate="false"
+            />-->
+
+        <!--<org.florescu.android.rangeseekbar.RangeSeekBar
+            android:id="@+id/rangeseekabr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            />-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:id="@+id/relativeSeek">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                android:id="@+id/rangeSeekbar6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:left_thumb_color="@color/colorAccent"
+                app:right_thumb_color="@color/colorAccent"
+                app:left_thumb_color_pressed="@color/colorAccent"
+                app:right_thumb_color_pressed="@color/colorAccent"
+                app:bar_highlight_color="@color/colorAccent"
+              />
+
+            <TextView
+                android:id="@+id/textMin6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_below="@id/rangeSeekbar6"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/alata_regular"
+                android:textSize="12sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/textMax6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_below="@id/rangeSeekbar6"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/alata_regular"
+                android:textSize="12sp"
+                android:textColor="#000"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!--   <androidx.viewpager.widget.ViewPager
+               android:id="@+id/slider_pager"
+               android:layout_width="match_parent"
+               android:layout_height="200dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginEnd="10dp"
+               android:layout_marginStart="10dp"
+               />
+
+           <com.google.android.material.tabs.TabLayout
+               app:tabGravity="center"
+               android:id="@+id/indicator"
+               app:tabBackground="@drawable/indicator_selector"
+               app:tabIndicatorHeight="0dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               >
+           </com.google.android.material.tabs.TabLayout>-->
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="scrollable"
+            android:background="@color/colorPrimary"
+            app:tabTextColor="#000"
+            app:tabIndicatorColor="@color/color_site"
+            app:tabGravity="fill"
+            android:visibility="gone"
+            />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </LinearLayout>

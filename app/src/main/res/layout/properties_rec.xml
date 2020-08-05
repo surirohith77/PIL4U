@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="25dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:id="@+id/imageview"
+            android:src="@drawable/insidehouse1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvBuildingType"
+            android:layout_toEndOf="@+id/imageview"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#000"
+            android:fontFamily="@font/fontawesome_webfont"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:text="Renovated Apartment"/>
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_toEndOf="@+id/imageview"
+            android:layout_below="@+id/tvBuildingType"
+            android:src="@drawable/ic_location"
+            android:id="@+id/ivlocation"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLocatin"
+            android:layout_toEndOf="@+id/ivlocation"
+            android:layout_below="@+id/tvBuildingType"
+            android:textSize="10sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/fontawesome_webfont"
+            android:text="1421 San Pedro St, Los Angeles, CA 90015"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPrice"
+            android:layout_below="@+id/tvLocatin"
+            android:textColor="@color/colorIcon"
+            android:textSize="16sp"
+            android:fontFamily="@font/fontawesome_webfont"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/imageview"
+            android:layout_marginStart="15dp"
+            android:text="C13000"/>
+
+     <!--   <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="60dp"
+            android:layout_height="150dp"
+            android:background="@drawable/button_color_accent"
+            android:layout_alignParentEnd="true"
+            android:text="Processing"
+            android:padding="5dp"
+            android:gravity="center"
+            android:id="@+id/btnStatus"
+            android:textColor="#fff"
+            android:textSize="12sp"
+           />-->
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tvPrice"
+            android:src="@drawable/ic_edit"
+            android:id="@+id/ivEdit"
+            android:layout_toStartOf="@+id/ivDelete"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="27dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tvPrice"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:id="@+id/ivDelete"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/card1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/realtive1"
+            >
+
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/realtiveBank"
+
+        >
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ad_bnv"
+            android:id="@+id/ivAd"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alata_regular"
+            android:text="10"
+            android:textColor="#f00"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:id="@+id/tvCount"
+            android:layout_marginStart="16dp"
+            />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:src="@drawable/kotak"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="28dp"
+        android:id="@+id/ivLogo"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="kotak mahindra"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:fontFamily="@font/alata_regular"
+        android:id="@+id/tvBankName"
+        android:textSize="12sp"
+        android:layout_below="@+id/ivLogo"
+        android:layout_centerHorizontal="true"
+        />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Rate of Interest"
+        android:textAlignment="center"
+        android:fontFamily="@font/alata_regular"
+        android:id="@+id/tvRateofInteres"
+        android:textSize="12sp"
+        android:layout_toEndOf="@+id/realtiveBank"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="3dp"
+        android:text="8.90%"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:fontFamily="@font/alata_regular"
+        android:id="@+id/tvRateofInterest"
+        android:textSize="11sp"
+        android:layout_toEndOf="@+id/realtiveBank"
+        android:layout_below="@+id/tvRateofInteres"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Processing Fee"
+        android:textAlignment="textEnd"
+        android:fontFamily="@font/alata_regular"
+        android:id="@+id/tvProcessingFe"
+        android:textSize="12sp"
+        android:layout_toEndOf="@+id/tvRateofInteres"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="15dp"
+        android:text="10000"
+        android:textColor="#000"
+        android:textAlignment="textEnd"
+        android:fontFamily="@font/alata_regular"
+        android:id="@+id/tvProcessingFee"
+        android:textSize="11sp"
+        android:layout_toEndOf="@+id/tvRateofInterest"
+        android:layout_below="@+id/tvProcessingFe"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Tenure  3.000 - 20.000 years"
+        android:textColor="#000"
+        android:fontFamily="@font/alata_regular"
+        android:id="@+id/tvTenure"
+        android:textSize="12sp"
+        android:layout_toEndOf="@+id/realtiveBank"
+        android:layout_below="@+id/tvRateofInterest"
+        android:layout_marginTop="15dp"
+        />
+
+  <!--  <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginEnd="6dp"
+        android:text="Get me this deal"
+        android:textSize="14sp"
+        android:background="@drawable/btn_bg_bank"
+        android:fontFamily="@font/alata_regular"
+        android:textColor="#fff"/>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTenure"
+                android:layout_toEndOf="@+id/realtiveBank"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="2dp">
+
+                <Button
+                    android:layout_width="175dp"
+                    android:layout_height="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/alata_regular"
+                    android:text="Get me this deal"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:background="@drawable/btn_bg_bank"
+                    android:id="@+id/btnGet"
+                    android:textStyle="bold"/>
+
+
+
+
+            </RelativeLayout>
+
+   <!-- <Button
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tvTenure"
+     android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="2dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/alata_regular"
+        android:text="Get me this deal"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:background="#3498db"
+        android:id="@+id/btnGet"
+        android:textStyle="bold"
+
+        />-->
+
+        </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/realtive1">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="10dp"
+                    android:visibility="gone"
+                    android:id="@+id/cardImageSlieder">
+
+                    <com.smarteist.autoimageslider.SliderView
+                        android:id="@+id/imageSlider"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        app:sliderAnimationDuration="600"
+                        app:sliderAutoCycleDirection="back_and_forth"
+                        app:sliderIndicatorAnimationDuration="600"
+                        app:sliderIndicatorEnabled="true"
+                        app:sliderIndicatorGravity="center_horizontal|bottom"
+                        app:sliderIndicatorMargin="15dp"
+                        app:sliderIndicatorOrientation="horizontal"
+                        app:sliderIndicatorPadding="3dp"
+                        app:sliderIndicatorRadius="2dp"
+                        app:sliderIndicatorSelectedColor="#5A5A5A"
+                        app:sliderIndicatorUnselectedColor="#FFF"
+                        app:sliderScrollTimeInSec="1"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+   <!-- <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="15dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/card2"
+        android:visibility="gone"
+        android:layout_below="@+id/card1">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:cardCornerRadius="10dp"
+                android:id="@+id/cardImageSlieder">
+
+                <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/imageSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:sliderAnimationDuration="600"
+                    app:sliderAutoCycleDirection="back_and_forth"
+                    app:sliderIndicatorAnimationDuration="600"
+                    app:sliderIndicatorEnabled="true"
+                    app:sliderIndicatorGravity="center_horizontal|bottom"
+                    app:sliderIndicatorMargin="15dp"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="3dp"
+                    app:sliderIndicatorRadius="2dp"
+                    app:sliderIndicatorSelectedColor="#5A5A5A"
+                    app:sliderIndicatorUnselectedColor="#FFF"
+                    app:sliderScrollTimeInSec="1"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+           &lt;!&ndash; <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Take a Loan with us"
+                android:textColor="#000"
+                android:textAlignment="center"
+                android:fontFamily="@font/alata_regular"
+                android:id="@+id/tvTotalLoans"
+                android:textSize="12sp"
+                android:layout_below="@+id/cardImageSlieder"
+                android:layout_centerHorizontal="true"
+                />&ndash;&gt;
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+-->
+        </RelativeLayout>

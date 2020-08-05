@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+           android:layout_margin="5dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/s2"
+                android:id="@+id/imageview"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Villa"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:fontFamily="@font/alata_regular"
+                android:id="@+id/tvTitle"
+                android:textSize="12sp"
+                android:layout_below="@+id/imageview"
+                />
+        </RelativeLayout>
+    </RelativeLayout>

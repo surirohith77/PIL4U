@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    app:titleTextColor="@color/colorAccent"
+    app:contentInsetStart="0dp"
+    app:layout_scrollFlags="scroll|enterAlways"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative_toolbar"
+       >
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:id="@+id/ivlocation"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/ic_twotone_location2"
+            android:layout_marginStart="10dp"/>
+
+     <!--   <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            app:lottie_url="REPLACE_JSON_URL"
+            app:lottie_fileName="map_location2.json"
+            app:lottie_autoPlay="true"
+            android:layout_marginTop="3dp"
+            app:lottie_loop="true"/>-->
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Title 1"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/ivlocation"
+        android:id="@+id/tvTool1"
+        android:maxLines="1"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_toEndOf="@+id/ivlocation"
+        android:layout_below="@+id/tvTool1"
+        android:maxLines="1"
+        android:visibility="gone"
+        android:textSize="11dp"
+        android:id="@+id/tvTool2"
+        android:textStyle="bold"
+        />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Click here to set Location"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/ivlocation"
+            android:id="@+id/tvTool3"
+            android:maxLines="1"
+            android:textSize="14sp"
+            android:fontFamily="@font/fontawesome_webfont"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorBlack"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="22dp"
+            android:id="@+id/ic_search"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/ic_heart"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_search2"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="22dp"
+            android:id="@+id/ic_heart"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_baseline_favorite_site"/>
+
+    </RelativeLayout>
+</androidx.appcompat.widget.Toolbar>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.octohub.pil4u">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/pil4u_logo7"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/pil4u_logo7"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".ui.Activities.CheckCivilScoreActivity"
+            android:parentActivityName=".ui.Activities.KYCRegisterationActivity"/>
+        <activity android:name=".ui.Activities.KYCRegisterationActivity"
+            android:parentActivityName=".ui.Activities.MainActivity3"/>
+        <activity
+            android:name=".ui.Activities.AdvertiseActivity"
+            android:parentActivityName=".ui.Activities.MainActivity3" />
+        <activity
+            android:name=".ui.Activities.TwoWheelerInsuranceActivity"
+            android:parentActivityName=".ui.Activities.MainActivity3" />
+        <activity
+            android:name=".ui.Activities.FamilyHealthInsuranceActivity"
+            android:parentActivityName=".ui.Activities.MainActivity3" />
+        <activity
+            android:name=".ui.Activities.InvestmentPlanActivity"
+            android:parentActivityName=".ui.Activities.MainActivity3" />
+        <activity android:name=".ui.Activities.Login_Voda_Activity" />
+        <activity
+            android:name=".ui.Activities.GetMeThisDealActivity"
+            android:parentActivityName=".ui.Activities.MainActivity3" />
+        <activity android:name=".ui.Activities.Panoram360DegreeActivity" />
+        <activity android:name=".ui.Activities.SearchviewActivity" />
+        <activity
+            android:name=".ui.Activities.FeaturedPropertiesFragActivity"
+            android:parentActivityName=".ui.Activities.MainActivity3" />
+        <activity android:name=".ui.Activities.MobileOTPActivity" />
+        <activity android:name=".ui.Activities.MainActivity3">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.Activities.SplashActivity" />
+        <activity android:name=".ui.Activities.SplashLocationActivity" />
+        <activity android:name=".ui.Activities.LocationPreferenceActivities" />
+        <activity android:name=".ui.Activities.MainActivity2" />
+        <activity android:name=".ui.Activities.OthersActivity" />
+        <activity android:name=".ui.Activities.PlacrPickerActivity" />
+        <activity
+            android:name=".ui.Activities.FavoritesActivity"
+            android:parentActivityName=".ui.Activities.MainActivity3" />
+        <activity android:name=".ui.Activities.FeaturedPropertiesActivity" />
+        <activity android:name=".ui.Activities.SelectRoleActivity" />
+        <activity android:name=".ui.Activities.OTPVerificationActivity" />
+        <activity android:name=".ui.Activities.MobileNumberActivity" />
+        <activity android:name=".ui.Activities.RegisterActivity" />
+        <activity android:name=".ui.Activities.LoginActivity" />
+        <activity android:name=".ui.Activities.IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.Activities.MainActivity" />
+
+        <service android:name=".Locationn.FetchAddressIntentService" />
+        <service android:name=".Locationn.GPSTracker" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCb5B4eUn0R8ZOVpi2l-ZvbNBC4hok6ISk" />
+    </application>
+
+</manifest>

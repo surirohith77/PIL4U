@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvWhatsNearBy"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/alata_regular"
+        android:layout_marginStart="15dp"
+        android:text="What's Nearby"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/cardEdu"
+        android:layout_below="@+id/tvWhatsNearBy">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:src="@drawable/education"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:id="@+id/ivicon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvEducation"
+                android:layout_toEndOf="@+id/ivicon"
+                android:textSize="16sp"
+                android:textColor="#9e2626"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/alata_regular"
+                android:layout_marginStart="20dp"
+                android:text="Education"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvEducation"
+                android:id="@+id/relativeFloorPlans"
+                android:layout_marginTop="10dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rvEducation"
+                    android:layout_margin="10dp"
+                    android:layoutAnimation="@anim/layout_animation_down_to_up"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/cardHealth"
+        android:layout_below="@+id/cardEdu">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:src="@drawable/helath"
+                android:layout_marginStart="5dp"
+                android:id="@+id/ivicon2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvHealth"
+                android:layout_toEndOf="@+id/ivicon2"
+                android:textSize="16sp"
+                android:textColor="#00acc1"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/alata_regular"
+                android:layout_marginStart="20dp"
+                android:text="Health &amp; Medical"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvHealth"
+                android:id="@+id/relativeHealth"
+                android:layout_marginTop="10dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rvHealth"
+                    android:layout_margin="10dp"
+                    android:layoutAnimation="@anim/layout_animation_down_to_up"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/cardTrans"
+        android:layout_below="@+id/cardHealth">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:src="@drawable/transport"
+                android:layout_marginStart="5dp"
+                android:id="@+id/ivicon3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTransport"
+                android:layout_toEndOf="@+id/ivicon3"
+                android:textSize="16sp"
+                android:textColor="#ffc107"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/alata_regular"
+                android:layout_marginStart="20dp"
+                android:text="Transportation"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTransport"
+                android:id="@+id/realtiveTransport"
+                android:layout_marginTop="10dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rvTransport"
+                    android:layout_margin="10dp"
+                    android:layoutAnimation="@anim/layout_animation_down_to_up"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/cardUserReviews"
+            android:layout_below="@+id/cardTrans">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvReviewsNO"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/alata_regular"
+                android:layout_marginStart="10dp"
+                android:text="896 Reviews"/>
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="25dp"
+               android:layout_marginTop="3dp"
+                android:src="@drawable/ic_baseline_star_half_24"
+                android:id="@+id/ivRating1"
+                android:layout_marginBottom="5dp"
+                android:layout_toStartOf="@+id/tvREviewsTotal"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvREviewsTotal"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/alata_regular"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentEnd="true"
+                android:text="(4.5 out of 5)"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvReviewsNO"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rvReviews"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layoutAnimation="@anim/layout_animation_right_to_left"
+                    />
+
+
+            </RelativeLayout>
+
+           <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvWriteAReview"
+                android:textSize="16sp"
+                android:textColor="#F00"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/alata_regular"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentEnd="true"
+                android:text="Write a Review"/>-->
+
+        </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/cardWriteReview"
+            android:layout_below="@+id/cardUserReviews">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvWriteReview"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/alata_regular"
+                android:layout_marginStart="10dp"
+                android:text="Write a review"/>
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_baseline_star_half_24"
+                android:id="@+id/ivRating2"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/tvWriteReview"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvYourRating"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/alata_regular"
+                android:layout_toEndOf="@+id/ivRating2"
+                android:layout_below="@+id/tvWriteReview"
+                android:text="Your rating and review"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etReviewTitle"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="5dp"
+                android:layout_below="@+id/tvYourRating"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                >
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Review Title"
+                    android:inputType="textCapWords"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etyourREview"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_below="@+id/etReviewTitle"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                >
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Your Review"
+                    android:inputType="textCapWords"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etyourREview"
+                android:background="@drawable/btn_bg_site"
+                android:text="Submit Review"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btnREview"
+                android:textColor="#fff"/>
+
+
+        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

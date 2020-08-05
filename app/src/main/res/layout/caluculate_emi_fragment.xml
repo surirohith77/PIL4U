@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etUsername"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Loan Amount ₹ "
+            android:text="400000"
+            android:padding="15dp"
+            android:textSize="12sp"
+            android:id="@+id/etLoanAmt"
+            android:inputType="numberDecimal"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etTenur"
+        android:layout_marginStart="5dp"
+      android:layout_marginTop="3dp"
+        android:layout_marginEnd="5dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Tenure"
+            android:text="24"
+            android:padding="15dp"
+            android:textSize="12sp"
+            android:id="@+id/etTenure"
+            android:inputType="numberDecimal"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinnerTime"
+        android:layout_below="@+id/ivicon"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+      />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etRateofInteres"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="5dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Rate of Interest %"
+            android:text="8.9"
+            android:padding="15dp"
+            android:textSize="12sp"
+            android:id="@+id/etRateofInterest"
+            android:inputType="numberDecimal"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+      <Button
+           android:layout_width="200dp"
+           android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginTop="15dp"
+           android:text="Calculate"
+           android:textSize="14sp"
+           android:background="@drawable/btn_bg_site"
+          android:id="@+id/btnCalculate"
+           android:fontFamily="@font/alata_regular"
+           android:textColor="#fff"/>
+
+    <com.anychart.AnyChartView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:id="@+id/anychartview"
+        android:layout_marginTop="15dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/realtivecalValue"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="100dp"
+        android:visibility="gone"
+       >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Monthly EMI"
+            android:textAlignment="center"
+            android:fontFamily="@font/alata_regular"
+            android:id="@+id/tvMonthlyEM"
+            android:textSize="12sp"
+            android:layout_toEndOf="@+id/realtiveBank"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:text="Total Payable Amount"
+            android:textAlignment="center"
+            android:fontFamily="@font/alata_regular"
+            android:id="@+id/tvTotalpaybl"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="₹ 13690"
+            android:textAlignment="center"
+            android:fontFamily="@font/alata_regular"
+            android:id="@+id/tvMonthlyEMi"
+            android:layout_below="@+id/tvMonthlyEM"
+            android:textSize="14sp"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_alignParentEnd="true"
+            android:text="₹ 328600"
+            android:textAlignment="center"
+            android:fontFamily="@font/alata_regular"
+            android:id="@+id/tvTotalpayble"
+            android:textSize="14sp"
+            android:textColor="#000"
+        android:layout_below="@+id/tvTotalpaybl"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

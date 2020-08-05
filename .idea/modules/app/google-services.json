@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "521253167857",
+    "firebase_url": "https://pil4u-94d96.firebaseio.com",
+    "project_id": "pil4u-94d96",
+    "storage_bucket": "pil4u-94d96.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521253167857:android:b06935cf7aa3b937023f50",
+        "android_client_info": {
+          "package_name": "com.octohub.pil4u"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521253167857-64ed3bkl939vgrpefvs15vkkidhsn07l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.octohub.pil4u",
+            "certificate_hash": "d66606778747f820675f5734c1a8f17ea466357f"
+          }
+        },
+        {
+          "client_id": "521253167857-7j1tes590kq6d9a15b703hu4tk8qom9v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD22YRZ-o6bSWpGEuNtO40cyy00ipXbG3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521253167857-7j1tes590kq6d9a15b703hu4tk8qom9v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.Activities.KYCRegisterationActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preferred Document : "
+        android:id="@+id/tvPreferedDoc"
+        android:textSize="16sp"
+        android:fontFamily="@font/alata_regular"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select"
+        android:id="@+id/tvPreferedDocSelect"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="@font/alata_regular"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:textStyle="bold"
+     />
+
+    <TextView
+        android:id="@+id/tvItemSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000"
+        android:fontFamily="@font/alata_regular"
+        android:textSize="12sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvPreferedDocSelect"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etAadhar"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@+id/tvItemSelected"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Aadhar No"
+            android:padding="10dp"
+            android:textSize="12sp"
+            android:id="@+id/etAadharr"
+            android:maxLength="14"
+            android:inputType="phone"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Document : "
+        android:id="@+id/tvUPload"
+        android:textSize="16sp"
+        android:fontFamily="@font/alata_regular"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/etAadhar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select"
+        android:id="@+id/tvUPloadDocSelect"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="@font/alata_regular"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/etAadhar"/>
+
+        <ImageView
+            android:id="@+id/ivCam1"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+           android:src="@drawable/ic_camera"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/tvUPloadDocSelect"
+            android:visibility="gone"
+           />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPan"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_below="@+id/ivCam1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="PAN No"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:id="@+id/etPann"
+                android:maxLength="10"
+                android:textAllCaps="true"
+                android:inputType="textCapWords"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload PAN : "
+            android:id="@+id/tvUPloadPan"
+            android:textSize="16sp"
+            android:fontFamily="@font/alata_regular"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/etPan"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select"
+            android:id="@+id/tvUPloadPanSelect"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="@font/alata_regular"
+            android:layout_marginTop="10dp"
+           android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/etPan"/>
+
+
+        <ImageView
+            android:id="@+id/ivPan"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_camera"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/tvUPloadPan"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOB: "
+            android:id="@+id/tvDob"
+            android:textSize="16sp"
+            android:fontFamily="@font/alata_regular"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/ivPan"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select"
+            android:id="@+id/tvDobSelect"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="@font/alata_regular"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/tvDob"
+            android:layout_below="@+id/ivPan"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address : "
+            android:id="@+id/tvAddress"
+            android:textSize="16sp"
+            android:fontFamily="@font/alata_regular"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/tvDob"/>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerAddress"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_below="@+id/tvDob"
+            android:layout_toEndOf="@+id/tvAddress"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select"
+            android:id="@+id/tvSelectdAddress"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="@font/alata_regular"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_alignParentEnd="true"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvDob"/>
+
+
+        <ImageView
+            android:id="@+id/ivAddress"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_camera"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/tvAddress"
+            android:visibility="gone"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank Statement:"
+            android:id="@+id/tvBankST"
+            android:textSize="16sp"
+            android:fontFamily="@font/alata_regular"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/ivAddress"/>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerBankSt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/tvBankST"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select"
+            android:id="@+id/tvBankSTSelect"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="@font/alata_regular"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_alignParentEnd="true"
+            android:textStyle="bold"
+            android:layout_below="@+id/ivAddress"/>
+
+
+        <ImageView
+            android:id="@+id/ivBankST"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_camera"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/spinnerBankSt"
+            android:visibility="gone"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etCompanyName"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@+id/ivBankST"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Company Name"
+            android:padding="10dp"
+            android:textSize="12sp"
+            android:id="@+id/etCompanyNamee"
+            android:maxLength="10"
+            android:textAllCaps="true"
+            android:inputType="textCapWords"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerDesignation"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/etCompanyName"
+            />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerIncome"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/spinnerDesignation"
+            />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/alata_regular"
+            android:text="Submit Details"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:background="@drawable/btn_bg_site"
+            android:layout_below="@+id/spinnerIncome"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnSubmit"
+            android:textStyle="bold"
+            />
+
+
+    </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

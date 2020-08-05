@@ -1,0 +1,173 @@
+<resources>
+    <string name="app_name">Pil4u</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="press_again_to_exit">Press again to exit</string>
+    <string name="error_no_internet_connection">No Internet connection</string>
+    <string name="error_connection_request_failed">Network connection request failed</string>
+    <string name="error_invalid_data">Invalid data</string>
+    <string name="error_invalid_credential">Invalid username or password</string>
+    <string name="please_enter_your_mobile_number_to_receive_verificatin_code">Please enter your mobile number to receive verification code</string>
+    <string name="preference_file_key">com.octohub.pil4u.PREF_FILE</string>
+    <string name="pref_name">username</string>
+    <string name="pref_role">role</string>
+    <string name="pref_mobile">mobile_number</string>
+    <string name="map_text">Tap the Map to enter your Address</string>
+    <string name="subLocality">subLocality</string>
+    <string name="address">address</string>
+    <string name="text_desc">Evans Tower very high demand corner junior one bedroom plus a large balcony boasting full open NYC views. You need to see the views to believe them. Mint condition with new hardwood floors. Lots of closets plus washer and dryer.
+
+Fully furnished. Elegantly appointed condominium unit situated on premier location. PS6. The wide entry hall leads to a large living room with dining area. This expansive 2 bedroom and 2 renovated marble bathroom apartment has great windows. Despite the interior views, the apartments Southern and Eastern exposures allow for lovely natural light to fill every room. The master suite is surrounded by handcrafted milkwork and features incredible walk-in closet and storage space.
+Fully furnished. Elegantly appointed condominium unit situated on premier location. PS6. The wide entry hall leads to a large living room with dining area. This expansive 2 bedroom and 2 renovated marble bathroom apartment has great windows. Despite the interior views, the apartments Southern and Eastern exposures allow for lovely natural light to fill every room. The master suite is surrounded by handcrafted milkwork and features incredible walk-in closet and storage space.</string>
+
+    <string-array name="day">
+
+        <item>Day</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+
+    </string-array>
+
+    <string-array name="month">
+
+        <item>Month</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+
+    </string-array>
+
+    <string-array name="year">
+
+        <item>Year</item>
+        <item>2002</item>
+        <item>2001</item>
+        <item>2000</item>
+        <item>1999</item>
+        <item>1999</item>
+        <item>1998</item>
+        <item>1997</item>
+        <item>1996</item>
+        <item>1995</item>
+        <item>1994</item>
+        <item>1993</item>
+        <item>1992</item>
+        <item>1991</item>
+        <item>1990</item>
+        <item>1989</item>
+        <item>1988</item>
+        <item>1987</item>
+        <item>1986</item>
+        <item>1985</item>
+        <item>1984</item>
+        <item>1983</item>
+        <item>1982</item>
+        <item>1981</item>
+        <item>1980</item>
+        <item>1979</item>
+        <item>1978</item>
+        <item>1977</item>
+        <item>1976</item>
+        <item>1975</item>
+        <item>1974</item>
+        <item>1973</item>
+        <item>1972</item>
+        <item>1971</item>
+        <item>1970</item>
+        <item>1969</item>
+        <item>1968</item>
+        <item>1967</item>
+        <item>1966</item>
+        <item>1965</item>
+        <item>1964</item>
+        <item>1963</item>
+        <item>1962</item>
+        <item>1961</item>
+        <item>1960</item>
+        <item>1959</item>
+        <item>1958</item>
+        <item>1957</item>
+        <item>1956</item>
+        <item>1955</item>
+        <item>1954</item>
+        <item>1953</item>
+        <item>1952</item>
+        <item>1951</item>
+        <item>1950</item>
+
+    </string-array>
+
+    <string-array name="kyc_proof">
+        <item>Aadhar</item>
+        <item>Pan</item>
+        <item>Voter ID</item>
+        <item>Driving License</item>
+        <item>Passport</item>
+
+    </string-array>
+
+    <string-array name="inner_search_property">
+        <item>1 BHK</item>
+        <item>2 BHK</item>
+        <item>3 BHK</item>
+        <item>1 BHK Villa</item>
+        <item>Villa</item>
+        <item>Apartment</item>
+    </string-array>
+
+    <string-array name="inner_search_insurance">
+        <item>LIC</item>
+        <item>Health Insurance</item>
+        <item>Motor or vehicle</item>
+        <item>Investments</item>
+    </string-array>
+
+    <string-array name="inner_search_loan">
+        <item>Home Loan</item>
+        <item>Business Loan</item>
+        <item>Personal Loan</item>
+        <item>Medical Loan</item>
+        <item>Vacation Loan</item>
+    </string-array>
+
+</resources>

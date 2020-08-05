@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <!-- <item
+        android:id="@+id/ic_heart"
+        android:title="favorite"
+        android:icon="@drawable/heart_red3"
+        app:showAsAction="always"
+        />-->
+
+    <item
+        android:id="@+id/ic_add"
+        android:title="Advertisement"
+        />
+
+    <item android:id="@+id/logout"
+        android:title="Logout"
+        app:showAsAction="never"
+        android:onClick="Logout"/>
+
+</menu>

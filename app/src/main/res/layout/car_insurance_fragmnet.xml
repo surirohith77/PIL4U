@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeMain"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeCar"
+        >
+
+
+
+
+      <!--  <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            app:lottie_fileName="car1.json"
+            app:lottie_autoPlay="true"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            app:lottie_loop="true"
+
+            />-->
+
+        <ImageView
+            android:id="@+id/animationView"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/car_animated2"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Car Insurance"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:fontFamily="@font/alata_regular"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/tvheading"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/animationView"
+            />
+
+        <!-- <View
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:layout_marginTop="5dp"
+             android:layout_below="@+id/tvheading"
+             android:id="@+id/view1"
+             android:layout_marginStart="10dp"
+             android:layout_marginEnd="10dp"
+             android:background="#000"
+             />-->
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Helath"
+            android:id="@+id/tvhealth"
+            android:layout_centerInParent="true"/>-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeDetails"
+        android:layout_below="@+id/relativeQuotes"
+        >
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:src="@drawable/check_mark_blk"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:id="@+id/tvCheck1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cashless repair "
+            android:textColor="#FFC107"
+            android:textStyle="bold"
+            android:fontFamily="@font/alata_regular"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/tvCheck1"
+            android:layout_below="@+id/tvheading"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/tvPlansStart"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" At Any Garage "
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:fontFamily="@font/alata_regular"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/tvPlansStart"
+            android:layout_below="@+id/tvheading"
+            android:layout_marginTop="13dp"
+            />
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:src="@drawable/check_mark_blk"
+            android:layout_below="@+id/tvCheck1"
+            android:layout_marginStart="15dp"
+            android:id="@+id/tvCheck2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Third-Party Car "
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:fontFamily="@font/alata_regular"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/tvCheck2"
+            android:layout_below="@+id/tvCheck1"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/tvCashless"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Damage Cover"
+            android:textColor="#FFC107"
+            android:textStyle="bold"
+            android:fontFamily="@font/alata_regular"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/tvCashless"
+            android:layout_below="@+id/tvCheck1"
+            android:layout_marginTop="3dp"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:src="@drawable/check_mark_blk"
+            android:layout_below="@+id/tvCheck2"
+            android:layout_marginStart="15dp"
+            android:id="@+id/tvCheck3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Protection from "
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:fontFamily="@font/alata_regular"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/tvCheck3"
+            android:layout_below="@+id/tvCheck2"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/tvDayCare"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Natural Disasters "
+            android:textColor="#FFC107"
+            android:textStyle="bold"
+            android:fontFamily="@font/alata_regular"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/tvDayCare"
+            android:layout_below="@+id/tvCheck2"
+            android:layout_marginTop="3dp"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:src="@drawable/check_mark_blk"
+            android:layout_below="@+id/tvCheck3"
+            android:layout_marginStart="15dp"
+            android:id="@+id/tvCheck4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Claim Bonus "
+            android:textColor="#FFC107"
+            android:textStyle="bold"
+            android:fontFamily="@font/alata_regular"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/tvCheck4"
+            android:layout_below="@+id/tvCheck3"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="10dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeCar"
+        android:id="@+id/relativeQuotes">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GET INSTANT QUOTES: "
+                        android:textColor="#000"
+                        android:fontFamily="@font/alata_regular"
+                        android:layout_marginStart="5dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:id="@+id/tvexp"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_below="@+id/tvexp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Car Number: "
+                            android:textColor="#000"
+                            android:fontFamily="@font/alata_regular"
+                            android:textSize="15sp"
+                            android:id="@+id/tvCarNo"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="5dp"
+                            />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/etCarNO"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_toEndOf="@+id/tvCarNo"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            >
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:layout_width="match_parent"
+                                android:padding="10dp"
+                                android:textSize="12sp"
+                                android:layout_height="match_parent"
+                                android:hint="Example TS07ZA1234"
+                                android:inputType="textCapWords"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <Button
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/alata_regular"
+                            android:text="Proceed"
+                            android:textColor="#fff"
+                            android:background="@drawable/btn_bg_site"
+                            android:layout_below="@+id/etCarNO"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/btnProceed"
+                            android:textStyle="bold"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/btnProceed"
+                            android:id="@+id/realtiveOR">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="OR"
+                                android:textColor="#EAE3E3"
+                                android:fontFamily="@font/alata_regular"
+                                android:textSize="15sp"
+                                android:id="@+id/tvOr"
+                               android:layout_centerHorizontal="true"
+                                />
+
+                        <View
+                            android:layout_width="100dp"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/view1"
+                            android:layout_marginEnd="5dp"
+                            android:background="#EAE3E3"
+                            android:layout_toStartOf="@+id/tvOr"
+                            android:layout_centerVertical="true"
+                            />
+
+                            <View
+                                android:layout_width="100dp"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:id="@+id/view2"
+                                android:layout_marginStart="5dp"
+                                android:background="#EAE3E3"
+                                android:layout_toEndOf="@+id/tvOr"
+                                android:layout_centerVertical="true"
+                                />
+
+
+                        </RelativeLayout>
+
+                        <Button
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="40dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:fontFamily="@font/alata_regular"
+                            android:text="Proceed without car Number"
+                            android:textColor="#fff"
+                            android:background="@drawable/btn_bg_with_out_car"
+                            android:layout_below="@+id/realtiveOR"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/btnProceedWOUTCarNo"
+                            android:textStyle="bold"
+                            />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

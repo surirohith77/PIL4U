@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/insidehouse1"
+            android:id="@+id/imageview"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvBuildingType"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#000"
+            android:fontFamily="@font/fontawesome_webfont"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_below="@+id/imageview"
+            android:text="Renovated Apartment"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLocatin"
+            android:layout_below="@+id/tvBuildingType"
+            android:textSize="11sp"
+            android:fontFamily="@font/fontawesome_webfont"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="5dp"
+            android:text="1421 San Pedro St, Los Angeles, CA 90015"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPrice"
+            android:layout_below="@+id/tvLocatin"
+            android:textColor="@color/colorIcon"
+            android:textSize="12sp"
+            android:fontFamily="@font/fontawesome_webfont"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:text="\u20B913000"/>
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

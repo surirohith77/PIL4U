@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "153256399300",
+    "firebase_url": "https://pilforu.firebaseio.com",
+    "project_id": "pilforu",
+    "storage_bucket": "pilforu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:153256399300:android:5cac89ce075ea63b951491",
+        "android_client_info": {
+          "package_name": "com.octohub.pil4u"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "153256399300-1gd2osirld64ge1sp2jfn86blneqaq15.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.octohub.pil4u",
+            "certificate_hash": "bc5826faea8d3797121f7611797517145376fba5"
+          }
+        },
+        {
+          "client_id": "153256399300-3u67totcr1kv85mguo5fd63vuj8dsk59.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD47VXEXhhVaZBZ1f2OsZzSfNmIFNPrHoI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "153256399300-3u67totcr1kv85mguo5fd63vuj8dsk59.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="Home"
+        />
+
+    <item
+        android:id="@+id/advertise"
+        android:icon="@drawable/ad"
+        android:title="Advertise" />
+
+
+    <item
+        android:id="@+id/loans"
+        android:icon="@drawable/loans"
+        android:title="Loans" />
+
+    <item
+        android:id="@+id/insurance"
+        android:icon="@drawable/insurance"
+        android:title="Insurance" />
+
+    <item
+        android:id="@+id/others"
+        android:icon="@drawable/sofa"
+        android:title="Others" />
+
+</menu>

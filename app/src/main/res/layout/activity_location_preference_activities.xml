@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.Activities.LocationPreferenceActivities">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+  <!--  <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_arrow_back"
+        android:id="@+id/ivBackArrow"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="Set your location"
+        android:fontFamily="@font/alata_regular"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:id="@+id/tvSetYourLocation"
+        />
+
+   <!-- <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSetYourLocation"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@+id/ivBackArrow"
+        android:background="@null"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/etSearch"
+        android:hint="Search for area, streeet name..."
+        android:textSize="16sp" />-->
+
+            <AutoCompleteTextView
+                android:id="@+id/etSearch"
+                android:hint="Search for area, streeet name..."
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvSetYourLocation"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+               />
+
+         <!--   <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@+id/etSearch"
+                android:id="@+id/view1"
+                android:background="#B6B6B6" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:id="@+id/relative_setLocationfromMap">
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/location_home"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/ivGps"/>
+               &lt;!&ndash; <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animationView"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    app:lottie_fileName="search_a_location.json"
+                    app:lottie_autoPlay="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="10dp"
+                    app:lottie_loop="true"
+                   />&ndash;&gt;
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/ivGps"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="15dp"
+                    android:text="Current Location"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/alata_regular"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/tvCurrentLocation"
+                    android:textSize="14sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/ivGps"
+                    android:layout_marginStart="15dp"
+                    android:text="Using GPS"
+                    android:fontFamily="@font/alata_regular"
+                    android:id="@+id/tvGps"
+                    android:textSize="13sp"
+                    android:layout_below="@+id/tvCurrentLocation"
+                    android:layout_marginBottom="10dp"
+                    />
+
+
+
+            </RelativeLayout>-->
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardCurrentLOcation"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relative_setLocationfromMap"
+            android:layout_margin="5dp">
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_twotone_location2"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/ivGps"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/ivGps"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="15dp"
+                    android:text="Current Location"
+                    android:fontFamily="@font/alata_regular"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:id="@+id/tvCurrentLocation"
+                    android:textSize="13sp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/ivGps"
+                    android:layout_marginStart="15dp"
+                    android:text="Using GPS"
+                    android:fontFamily="@font/alata_regular"
+                    android:id="@+id/tvGps"
+                    android:textSize="11sp"
+                    android:layout_below="@+id/tvCurrentLocation"
+
+                    />
+
+
+           <!-- <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/forward_black_arrow"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/ivArrow"
+                android:layout_alignParentEnd="true"/>-->
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CardPreviousLocation"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+      >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="SAVED ADDRESSES"
+                android:fontFamily="@font/alata_regular"
+                android:id="@+id/tvSavedAddress"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvSavedAddress"
+                android:id="@+id/relative_previosLocation">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_twotone_house"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/ivhOme"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/ivhOme"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="15dp"
+                    android:text="Home"
+                    android:fontFamily="@font/alata_regular"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:id="@+id/tvAddress1"
+                    android:textSize="13sp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/ivhOme"
+                    android:layout_marginStart="15dp"
+                    android:text="5-6-7-8/ kukatpally"
+                    android:fontFamily="@font/alata_regular"
+                    android:id="@+id/tvAddress2"
+                    android:textSize="11sp"
+                    android:layout_below="@+id/tvAddress1"
+                    android:layout_marginBottom="10dp"
+                    />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+        </LinearLayout>

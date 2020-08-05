@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Activities.SplashLocationActivity">
+
+  <!--  <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/location2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp"
+        android:id="@+id/ivLocation"/>-->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/ivLocation"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:lottie_fileName="earth.json"
+        app:lottie_autoPlay="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:lottie_loop="true"
+     />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/ivhOme"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="25dp"
+        android:text="Home"
+        android:layout_below="@+id/ivLocation"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/alata_regular"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:id="@+id/tvAddress1"
+        android:textSize="14sp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="5-6-7-8/ kukatpally"
+        android:fontFamily="@font/alata_regular"
+        android:id="@+id/tvAddress2"
+        android:textSize="12sp"
+        android:layout_below="@+id/tvAddress1"
+        android:layout_marginBottom="10dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            android:text="We just need a few details to match you with the right home loan product"
+            android:fontFamily="@font/alata_regular"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/realtiveBank"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPropertyi"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="25dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Property ID "
+                android:text="CR-521"
+                android:padding="15dp"
+                android:textSize="12sp"
+                android:id="@+id/etPropertyid"
+                android:inputType="textCapWords"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPropertyAm"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="25dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Property Amount "
+                android:text="₹ 1300000"
+                android:padding="15dp"
+                android:textSize="12sp"
+                android:id="@+id/etPropertyAmtt"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etUsername"
+            android:layout_marginTop="15dp"
+           android:layout_marginStart="25dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Loan Amount ₹ "
+                android:id="@+id/etLoanAmt"
+                android:padding="15dp"
+                android:textSize="12sp"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etTenur"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="25dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Tenure"
+                android:padding="15dp"
+                android:textSize="12sp"
+                android:id="@+id/etTenure"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerTime"
+            android:layout_below="@+id/ivicon"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="25dp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etag"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="25dp"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Your age"
+                android:id="@+id/etage"
+                android:padding="15dp"
+                android:textSize="12sp"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:text="Is your property identified ?"
+            android:textAlignment="center"
+            android:fontFamily="@font/alata_regular"
+            android:id="@+id/tvRateofInteres"
+            android:textSize="14sp"
+            android:layout_toEndOf="@+id/realtiveBank"
+            />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerProperty"
+            android:layout_below="@+id/ivicon"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerCity"
+            android:layout_below="@+id/ivicon"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPropertyCos"
+          android:layout_marginTop="5dp"
+            android:layout_marginStart="25dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Property Cost"
+                android:padding="15dp"
+                android:textSize="12sp"
+                android:id="@+id/etPropertyCost"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerEmployement"
+            android:layout_below="@+id/ivicon"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etIncom"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="25dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Your Income"
+                android:id="@+id/etIncome"
+                android:padding="15dp"
+                android:textSize="12sp"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerIncome"
+            android:layout_below="@+id/ivicon"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="25dp"
+            />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etTotalEM"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Current Total EMI"
+                android:id="@+id/etTotalEMi"
+                android:padding="15dp"
+                android:textSize="12sp"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etFUllNam"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Full Name(as per PAN)"
+                android:id="@+id/etFUllName"
+                android:padding="15dp"
+                android:textSize="12sp"
+                android:inputType="textCapWords"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etemai"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Your Email'Id"
+                android:id="@+id/etemail"
+                android:padding="15dp"
+                android:textSize="12sp"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etmobil"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Mobile Number(OTP Verification req)"
+                android:id="@+id/etmobile"
+                android:padding="15dp"
+                android:textSize="12sp"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/alata_regular"
+            android:text="Submit Details"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:background="@drawable/btn_bg_site"
+            android:id="@+id/btnGet"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

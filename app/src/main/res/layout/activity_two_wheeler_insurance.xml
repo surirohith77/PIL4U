@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.Activities.TwoWheelerInsuranceActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/akshay1"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ivImage1"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Save Upto 85% On Two Wheeler Insurance"
+        android:fontFamily="@font/alata_regular"
+        android:textSize="18sp"
+      android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="#000"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/relativeNO"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            >
+
+
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:src="@drawable/dot_gray"
+            android:id="@+id/dot1"
+           android:layout_marginTop="2dp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Instant Policy"
+            android:fontFamily="@font/alata_regular"
+            android:textSize="12sp"
+           android:layout_toEndOf="@+id/dot1"
+            android:textColor="#000"
+            android:id="@+id/tvInstantPolicy"
+            />
+
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:src="@drawable/dot_gray"
+                android:id="@+id/dot2"
+                android:layout_toEndOf="@+id/tvInstantPolicy"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="No Inspection"
+                android:fontFamily="@font/alata_regular"
+                android:textSize="12sp"
+                android:layout_toEndOf="@+id/dot2"
+                android:textColor="#000"
+                android:id="@+id/tvNoInspection"
+                />
+
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:src="@drawable/dot_gray"
+                android:id="@+id/dot3"
+                android:layout_toEndOf="@+id/tvNoInspection"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="No Documentation"
+                android:fontFamily="@font/alata_regular"
+                android:textSize="12sp"
+                android:layout_toEndOf="@+id/dot3"
+                android:textColor="#000"
+                />
+        </RelativeLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etVechicleNo"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+          android:layout_below="@+id/relativeNO"
+            android:layout_marginTop="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:layout_height="match_parent"
+                android:hint="Example TS07ZA1234"
+                android:inputType="textCapWords"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="Get Quotes"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/alata_regular"
+            android:background="#2ecc71"
+            android:textColor="#fff"
+            android:id="@+id/btnGETquotes"
+            android:layout_below="@+id/etVechicleNo"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnGETquotes"
+          android:layout_margin="10dp"
+            android:id="@+id/realtiveOR">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OR"
+                android:textColor="#EAE3E3"
+                android:fontFamily="@font/alata_regular"
+                android:textSize="15sp"
+                android:id="@+id/tvOr"
+                android:layout_centerHorizontal="true"
+                />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/view1"
+                android:layout_marginEnd="5dp"
+                android:background="#EAE3E3"
+                android:layout_toStartOf="@+id/tvOr"
+                android:layout_centerVertical="true"
+                />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/view2"
+                android:layout_marginStart="5dp"
+                android:background="#EAE3E3"
+                android:layout_toEndOf="@+id/tvOr"
+                android:layout_centerVertical="true"
+                />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Proceed without bike number"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/alata_regular"
+            android:id="@+id/btnWithOutBikeNumber"
+            android:layout_below="@+id/realtiveOR"
+            android:drawableRight="@drawable/right_arrow_gray_26dp"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Brand new Bike ? Click here"
+        android:fontFamily="@font/alata_regular"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:textColor="#3fa7fd"
+        />
+
+
+
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

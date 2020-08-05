@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Activities.MobileOTPActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:src="@drawable/home_bg"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/ivBg"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create a personal"
+        android:id="@+id/tvCreateAPersonal"
+        android:textColor="#000"
+        android:fontFamily="@font/alata_regular"
+        android:layout_below="@+id/toolbar"
+        android:textSize="18sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="account"
+        android:id="@+id/tvAccount"
+        android:textColor="#000"
+        android:fontFamily="@font/alata_regular"
+        android:textSize="18sp"
+        android:layout_below="@+id/tvCreateAPersonal"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etMobile"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ivBg"
+        android:layout_marginTop="25dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter mobile number"
+            android:backgroundTint="#f00"
+            android:textColorHint="#6daf41"
+            android:fontFamily="@font/alata_regular"
+            android:id="@+id/etMobiles"
+            android:maxLength="10"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/right_arrow_color_accent"
+        android:text="Otp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/ivArrow"
+        android:layout_alignTop="@+id/etMobile"
+        android:layout_alignBottom="@+id/etMobile"
+        android:layout_alignRight="@+id/etMobile"
+        android:visibility="gone"
+        />
+
+    <com.goodiebag.pinview.Pinview
+        android:id="@+id/pinview"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        app:cursorVisible="true"
+        app:forceKeyboard="false"
+        app:inputType="number"
+        app:password="false"
+        app:pinHeight="35dp"
+        app:pinLength="4"
+        android:visibility="gone"
+        app:pinWidth="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/etMobile"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/tvSKip"
+        android:textSize="20sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="skip"
+        android:onClick="skipto"
+        android:textStyle="bold"
+        android:layout_marginBottom="25dp"/>
+
+</RelativeLayout>

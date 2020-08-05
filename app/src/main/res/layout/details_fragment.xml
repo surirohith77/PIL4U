@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/relativeSLide">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorEnabled="true"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="15dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="#5A5A5A"
+        app:sliderIndicatorUnselectedColor="#FFF"
+        app:sliderScrollTimeInSec="1"
+       />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/color_transparent"
+            android:layout_alignParentBottom="true">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:lottie_fileName="walking_man.json"
+            app:lottie_autoPlay="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="10dp"
+            app:lottie_loop="true"
+            android:visibility="gone"
+           />
+
+            <ImageView
+                android:id="@+id/ivMan"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/kid_namskar"
+                android:visibility="gone"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivUser"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+              android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/person"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvMsg"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:fontFamily="@font/alata_regular"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="5dp"
+                android:visibility="gone"
+                android:text="Do you need any help"/>
+
+        </LinearLayout>
+
+        </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/relativeSLide"
+        android:id="@+id/view1"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#EAE3E3"
+        android:visibility="gone"
+      />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPrice"
+        android:layout_below="@+id/view1"
+        android:textColor="#f00"
+        android:textSize="18sp"
+        android:fontFamily="@font/alata_regular"
+       android:layout_marginTop="3dp"
+        android:layout_marginStart="15dp"
+        android:text="\u20B9 13000"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="Renovated Apartment"
+        android:textColor="#000"
+        android:fontFamily="@font/alata_regular"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tvBuildingType"
+        android:layout_below="@+id/tvPrice"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="Beds: 4"
+        android:textColor="#000"
+        android:fontFamily="@font/alata_regular"
+        android:layout_below="@+id/tvBuildingType"
+        android:layout_marginTop="3dp"
+        android:id="@+id/tvBeds"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="Baths: 2"
+        android:textColor="#000"
+        android:layout_below="@+id/tvBuildingType"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/alata_regular"
+        android:id="@+id/tvBaths"
+        android:layout_toEndOf="@+id/tvBeds"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="Sq ft: 5280 "
+        android:textColor="#000"
+        android:layout_below="@+id/tvBuildingType"
+        android:fontFamily="@font/alata_regular"
+        android:layout_marginTop="3dp"
+        android:id="@+id/tvSqrt"
+        android:layout_toEndOf="@+id/tvBaths"
+        />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvBeds"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:id="@+id/linearSocial">
+
+
+          <!--  <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                >-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_compare_arrows"
+                        android:id="@+id/ivCompare"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="15dp"/>
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/gmail4"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="30dp"
+                        android:id="@+id/ivMail"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/ivCompare"/>
+
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/whastapp2"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="30dp"
+                        android:id="@+id/ivWhatsapp"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/ivMail"/>
+
+
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/love_red"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="30dp"
+                        android:id="@+id/ivSave"
+                        android:layout_toEndOf="@+id/ivWhatsapp"/>
+
+
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/sharee3"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="15dp"
+                        android:id="@+id/ivShare"
+                        android:layout_toEndOf="@+id/ivSave"/>
+
+                </RelativeLayout>
+
+           <!-- </androidx.cardview.widget.CardView>-->
+
+        </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/linearSocial"
+        android:id="@+id/view2"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#EAE3E3" />
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#F6F2F2"
+    android:layout_below="@+id/view2"
+    android:layout_marginTop="15dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="5dp"
+    app:cardElevation="0dp"
+    android:id="@+id/cardviewOffers"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_offers"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ivOffers"/>
+
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="7.5 % Instant Discount Using BOB Credit Cards"
+       android:layout_centerVertical="true"
+        android:id="@+id/tvBank"
+        android:layout_toEndOf="@+id/ivOffers"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="+1 offers"
+            android:layout_centerVertical="true"
+            android:id="@+id/tvOffers"
+           android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#0055FF"
+            />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="#000"
+            android:layout_marginStart="15dp"
+            android:textSize="22sp"
+            android:id="@+id/tvDescription"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/cardviewOffers"
+            android:fontFamily="@font/playfairdisplay_variablefont_wght"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="View More"
+            android:textColor="#F00"
+            android:fontFamily="@font/alata_regular"
+            android:layout_marginTop="15dp"
+            android:id="@+id/tvViewMore"
+            android:layout_below="@+id/tvDescription"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:text="I tend to shy away from restaurant chains, but wherever I go"
+            android:textColor="#000"
+            android:fontFamily="@font/alata_regular"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/tvDescText"
+            android:maxLines="1"
+            android:layout_below="@+id/tvViewMore"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/tvDescText"
+            android:id="@+id/view3"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#EAE3E3" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view3"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardCornerRadius="10dp"
+            android:elevation="5dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/cardviewProperyDetails">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Property Details"
+                    android:textColor="#000"
+                    android:layout_marginStart="3dp"
+                    android:textSize="20sp"
+                    android:id="@+id/tvPropertyDetails"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/playfairdisplay_variablefont_wght"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Property ID: HZ27"
+                    android:textColor="#000"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/alata_regular"
+                    android:id="@+id/tvPropertTyID"
+                    android:layout_below="@+id/tvPropertyDetails"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Bedrooms : 8"
+                    android:textColor="#000"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/alata_regular"
+                    android:id="@+id/tvBedrooms"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/tvPropertyDetails"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Bathrooms : 8"
+                    android:textSize="11sp"
+                    android:textColor="#000"
+                    android:fontFamily="@font/alata_regular"
+                    android:id="@+id/tvBathrroms"
+                   android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/tvPropertyDetails"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Property Size 1560 Sq Ft"
+                    android:textColor="#000"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/alata_regular"
+                    android:id="@+id/tvPropertySize"
+                    android:layout_below="@+id/tvPropertTyID"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Garage : 8"
+                    android:textColor="#000"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/alata_regular"
+                    android:id="@+id/tvGarage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/tvBedrooms"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Garage Size : 200 SqFt"
+                    android:textSize="11sp"
+                    android:textColor="#000"
+                    android:fontFamily="@font/alata_regular"
+                    android:id="@+id/tvGarageSize"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/tvBathrroms"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Property Type : Apartment"
+                    android:textColor="#000"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/alata_regular"
+                    android:id="@+id/tvPropertyType"
+                    android:layout_below="@+id/tvPropertySize"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Property Status : For Sale"
+                    android:textSize="11sp"
+                    android:textColor="#000"
+                    android:fontFamily="@font/alata_regular"
+                    android:id="@+id/tvSaleStatus"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/tvGarageSize"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Year Built 05-06-2016"
+                    android:textColor="#D3C5C5"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/alata_regular"
+                    android:id="@+id/tvYearBuilt"
+                    android:layout_below="@+id/tvPropertyType"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Price  \u20B9 1,30,00000"
+                    android:textSize="13sp"
+                    android:textColor="#FF0000"
+                    android:fontFamily="@font/alata_regular"
+                    android:id="@+id/tvPropertyPrice"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/tvSaleStatus"
+                    />
+
+              <!--  <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/house_3d"
+                    android:layout_below="@id/tvYearBuilt"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/ivBuilding"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Apartment"
+                    android:textColor="#000"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/alata_regular"
+                    android:id="@+id/tvPropertyType"
+                    android:layout_toEndOf="@+id/ivBuilding"
+                    android:layout_below="@+id/tvYearBuilt"
+                    />
+
+                    -->
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardviewProperyDetails"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardCornerRadius="10dp"
+            android:elevation="5dp"
+            android:layout_marginTop="10dp"
+        android:id="@+id/cardviewAdditionalDetails">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Additional Details"
+                    android:textColor="#000"
+                    android:layout_marginStart="3dp"
+                    android:textSize="20sp"
+                    android:id="@+id/tvAdditionalDetails"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/playfairdisplay_variablefont_wght"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Deposit 20%"
+                    android:textColor="#000"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/alata_regular"
+                    android:id="@+id/tvDeposit"
+                    android:layout_below="@+id/tvAdditionalDetails"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Last remodel year : 1997"
+                    android:textSize="11sp"
+                    android:textColor="#000"
+                    android:fontFamily="@font/alata_regular"
+                    android:id="@+id/tvLastRemodel"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/tvAdditionalDetails"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Pool Size : 300 Sq Ft"
+                    android:textColor="#000"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/alata_regular"
+                    android:id="@+id/tvPoolSize"
+                    android:layout_below="@+id/tvDeposit"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Amenities: Clubhouse"
+                    android:textSize="11sp"
+                    android:textColor="#000"
+                    android:fontFamily="@font/alata_regular"
+                    android:id="@+id/tvAmenities"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/tvLastRemodel"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Additional Rooms : Guest Bath"
+                    android:textColor="#000"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/alata_regular"
+                    android:id="@+id/tvARooms"
+                    android:layout_below="@+id/tvPoolSize"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Equipment : Grill - Gas"
+                    android:textSize="11sp"
+                    android:textColor="#000"
+                    android:fontFamily="@font/alata_regular"
+                    android:id="@+id/tvEquipment"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/tvAmenities"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/cardviewAdditionalDetails">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Featured Properties"
+                android:textColor="#000"
+                android:layout_marginStart="15dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/playfairdisplay_variablefont_wght"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Handpicked properties by our team"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:textSize="16sp"
+                android:fontFamily="serif"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rvProperties"
+                    />
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Featured Videos"
+                android:textColor="#000"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/playfairdisplay_variablefont_wght"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You can have a look at our videos"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:textSize="16sp"
+                android:fontFamily="serif"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="80dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rvYoutube"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+  <!--  <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="#CB0094"
+        android:text="Get In Touch"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        />-->
+
+
+</ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_bg_site"
+        android:text="Get In Touch"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        />
+
+</RelativeLayout>
+

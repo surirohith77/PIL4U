@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.Activities.TwoWheelerInsuranceActivity">
+
+        <include layout="@layout/toolbar"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/term_life_insurance"
+            android:layout_marginTop="5dp"
+            android:id="@+id/ivImage1"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Save tax till 31st July 2020 and Secure Health + Tax savings"
+            android:fontFamily="@font/alata_regular"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Of upto ₹75,000 under section 80D. The last date is now July 31, 2020 "
+            android:fontFamily="@font/alata_regular"
+            android:textSize="10sp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="#000"
+            />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etName"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="25dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:layout_height="match_parent"
+                android:hint="Your Name"
+                android:inputType="textCapWords"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etMobile"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:layout_height="match_parent"
+                android:hint="Your Mobile"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"
+            android:text="Gender"
+            android:fontFamily="@font/alata_regular"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"
+            />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/radioGroup">
+            <RadioButton
+                android:id="@+id/radio_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/radio_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                />
+
+        </RadioGroup>
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/alata_regular"
+            android:layout_gravity="center"
+            android:text="Continue"
+            android:textColor="#fff"
+            android:background="@drawable/btn_bg_site"
+            android:id="@+id/btnProceed"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:text="By clicking you agreed to our privacy policy and Terms of use"
+            android:fontFamily="@font/alata_regular"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="#000"
+            />
+
+
+
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

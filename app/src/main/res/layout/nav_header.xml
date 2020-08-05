@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/header"
+    android:background="@color/colorPrimary"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+ <!--   <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/user"
+        android:layout_marginTop="35dp"
+        android:id="@+id/ivtitleicon"
+        android:layout_marginStart="15dp"
+        />-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivtitleicon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="8dp"
+        android:src="@drawable/user2"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="15dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="@string/app_name"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/tvname"
+        android:layout_marginStart="15dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/ivtitleicon"
+        android:layout_marginTop="45dp"
+        />
+
+
+
+</RelativeLayout>

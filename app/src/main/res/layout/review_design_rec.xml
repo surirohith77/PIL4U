@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <!--  <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">-->
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivUser"
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+                android:src="@drawable/d1"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvName"
+                android:layout_toEndOf="@+id/ivUser"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/alata_regular"
+                android:layout_marginStart="5dp"
+                android:text="Education"/>
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_baseline_star_half_24"
+                android:id="@+id/ivRating1"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/ivicon"
+               android:layout_alignParentEnd="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvRating"
+                android:layout_below="@+id/ivicon"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/fontawesome_webfont"
+                android:textStyle="bold"
+                android:layout_marginTop="14dp"
+                android:textSize="14sp"
+                android:layout_toStartOf="@+id/ivRating1"
+                android:text="4.5"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDate"
+                android:layout_toEndOf="@+id/ivUser"
+                android:layout_below="@+id/tvName"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/alata_regular"
+                android:layout_marginStart="5dp"
+                android:text="December 28, 2019"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvReview"
+                android:layout_below="@+id/ivUser"
+                android:textSize="12sp"
+                android:textColor="#000"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/alata_regular"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="REview"/>
+
+      <!--  </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>-->
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#F6F2F2"
+    android:layout_below="@+id/view2"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    app:cardElevation="0dp"
+    android:id="@+id/cardviewOffers"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_bank"
+            android:layout_marginStart="10dp"
+            android:id="@+id/ivOffers"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="7.5 % Instant Discount Using BOB Credit Cards"
+            android:layout_centerVertical="true"
+            android:textSize="12sp"
+            android:id="@+id/tvOffers"
+            android:layout_toEndOf="@+id/ivOffers"
+            />
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

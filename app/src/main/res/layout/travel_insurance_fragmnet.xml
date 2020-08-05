@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeMain"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeTravel"
+        >
+
+
+
+
+        <!--<com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            app:lottie_fileName="aeroplane.json"
+            app:lottie_autoPlay="true"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            app:lottie_loop="true"
+
+            />-->
+
+        <ImageView
+            android:id="@+id/animationView"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/travel_animated"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Travel Insurance"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:fontFamily="@font/alata_regular"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/tvheading"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/animationView"
+            />
+
+        <!-- <View
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:layout_marginTop="5dp"
+             android:layout_below="@+id/tvheading"
+             android:id="@+id/view1"
+             android:layout_marginStart="10dp"
+             android:layout_marginEnd="10dp"
+             android:background="#000"
+             />-->
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Helath"
+            android:id="@+id/tvhealth"
+            android:layout_centerInParent="true"/>-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeDetails"
+        android:layout_below="@+id/relativeQuotes"
+        >
+
+
+
+    <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:src="@drawable/check_mark_blk"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:id="@+id/tvCheck1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emergency "
+            android:textColor="#FFC107"
+            android:textStyle="bold"
+            android:fontFamily="@font/alata_regular"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/tvCheck1"
+            android:layout_below="@+id/tvheading"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/tvPlansStart"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Hospitalization Facility"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:fontFamily="@font/alata_regular"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/tvPlansStart"
+            android:layout_below="@+id/tvheading"
+            android:layout_marginTop="13dp"
+            />
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:src="@drawable/check_mark_blk"
+            android:layout_below="@+id/tvCheck1"
+            android:layout_marginStart="15dp"
+            android:id="@+id/tvCheck2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reimbursement for "
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:fontFamily="@font/alata_regular"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/tvCheck2"
+            android:layout_below="@+id/tvCheck1"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/tvCashless"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Trip Delay/Cancellation"
+            android:textColor="#FFC107"
+            android:textStyle="bold"
+            android:fontFamily="@font/alata_regular"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/tvCashless"
+            android:layout_below="@+id/tvCheck1"
+            android:layout_marginTop="3dp"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:src="@drawable/check_mark_blk"
+            android:layout_below="@+id/tvCheck2"
+            android:layout_marginStart="15dp"
+            android:id="@+id/tvCheck3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Financial Support"
+            android:textColor="#FFC107"
+            android:textStyle="bold"
+            android:fontFamily="@font/alata_regular"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/tvCheck3"
+            android:layout_below="@+id/tvCheck2"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/tvDayCare"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" During Crisis "
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:fontFamily="@font/alata_regular"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/tvDayCare"
+            android:layout_below="@+id/tvCheck2"
+            android:layout_marginTop="3dp"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:src="@drawable/check_mark_blk"
+            android:layout_below="@+id/tvCheck3"
+            android:layout_marginStart="15dp"
+            android:id="@+id/tvCheck4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Include Multiple Trips"
+            android:textColor="#FFC107"
+            android:textStyle="bold"
+            android:fontFamily="@font/alata_regular"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/tvCheck4"
+            android:layout_below="@+id/tvCheck3"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="10dp"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeTravel"
+        android:id="@+id/relativeQuotes">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GET INSTANT QUOTES: "
+                        android:textColor="#000"
+                        android:fontFamily="@font/alata_regular"
+                        android:textSize="15sp"
+                        android:layout_marginStart="5dp"
+                        android:textStyle="bold"
+                        android:id="@+id/tvexp"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_below="@+id/tvexp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date of birth (DOB): "
+                            android:textColor="#000"
+                            android:fontFamily="@font/alata_regular"
+                            android:textSize="15sp"
+                            android:id="@+id/tvDob"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginBottom="10dp"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:id="@+id/linearDrop">
+
+
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spinnerDay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spinnerMonth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="2dp"
+                                />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spinnerYear"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginEnd="2dp"
+                                />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Travelling To? "
+                            android:textColor="#000"
+                            android:fontFamily="@font/alata_regular"
+                            android:textSize="15sp"
+                            android:id="@+id/tvTobbaco"
+                            android:layout_below="@+id/linearDrop"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="5dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/spinnerTravelling"
+                            android:layout_width="250dp"
+                            android:layout_height="40dp"
+                            android:layout_toEndOf="@+id/tvTobbaco"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_below="@+id/linearDrop"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cover Amount"
+                            android:textColor="#000"
+                            android:fontFamily="@font/alata_regular"
+                            android:textSize="15sp"
+                            android:id="@+id/tvIncome"
+                            android:layout_below="@+id/spinnerTravelling"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginStart="5dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/spinnerCoverAmt"
+                            android:layout_width="250dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toEndOf="@+id/tvIncome"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_below="@+id/spinnerTravelling"
+                            />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Trip Type"
+                            android:textColor="#000"
+                            android:fontFamily="@font/alata_regular"
+                            android:textSize="15sp"
+                            android:id="@+id/tvTripType"
+                            android:layout_below="@+id/tvIncome"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="5dp"
+                            />
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvTripType"
+                            android:orientation="horizontal"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/radioGroup">
+                            <RadioButton
+                                android:id="@+id/radio_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Single"
+                                android:checked="true"/>
+                            <RadioButton
+                                android:id="@+id/radio_two"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Multi"
+                                />
+
+                        </RadioGroup>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/etStayDays"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_below="@+id/radioGroup"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            >
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:layout_width="match_parent"
+                                android:padding="10dp"
+                                android:textSize="12sp"
+                                android:layout_height="match_parent"
+                                android:hint="Stay Days"
+                                android:inputType="number"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <Button
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/alata_regular"
+                            android:text="Proceed"
+                            android:textColor="#fff"
+                            android:background="@drawable/btn_bg_site"
+                            android:layout_below="@+id/etStayDays"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/btnGet"
+                            android:textStyle="bold"
+                            />
+
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Property Video"
+                android:textColor="#ff5a5f"
+                android:fontFamily="@font/alata_regular"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:id="@+id/tvPropertyVideo"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Virtual Tour"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/alata_regular"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:id="@+id/tvVirtualTour"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/tvPropertyVideo"
+
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tvPropertyVideo"
+                android:id="@+id/view1"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="#EAE3E3"
+                />
+
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtube_player_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:autoPlay="false"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                app:showFullScreenButton="true"
+                android:layout_below="@+id/view1"
+                app:videoId="oqNZOOWF8qM"
+                />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

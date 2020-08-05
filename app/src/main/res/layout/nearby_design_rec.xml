@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+  <!--  <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/cardEdu"
+        android:layout_below="@+id/tvWhatsNearBy">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvNameDistance"
+                android:layout_below="@+id/ivicon"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/alata_regular"
+                android:textSize="10sp"
+                android:text="Eladia's Kids(3.13 miles)"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvReview"
+                android:layout_below="@+id/ivicon"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/alata_regular"
+                android:textSize="10sp"
+                android:text="8895 Reviews"/>
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/ic_baseline_star_half_24"
+                android:id="@+id/ivRating1"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/ivicon"
+                android:layout_toStartOf="@+id/tvReview"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvRating"
+                android:layout_below="@+id/ivicon"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/fontawesome_webfont"
+                android:textStyle="bold"
+                android:layout_marginTop="9dp"
+                android:textSize="10sp"
+                android:layout_toStartOf="@+id/ivRating1"
+                android:text="4.5"/>
+
+
+
+
+<!--
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>-->
+
+</RelativeLayout>

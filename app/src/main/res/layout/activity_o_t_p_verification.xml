@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageview"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/sms"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Verification Code"
+        android:textColor="#Fff"
+        android:id="@+id/tvc1"
+        android:layout_centerInParent="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textAlignment="center"
+        android:fontFamily="@font/playfairdisplay_variablefont_wght"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@+id/tvc1"
+        android:textAlignment="center"
+        android:id="@+id/tvc2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#E6D2D2"
+        android:text="OTP has been sent to your mobile please verify"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/tvc2">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Verification code"
+            android:maxLength="6"
+            android:inputType="number"
+            android:backgroundTint="#fff"
+            android:textColor="#ffff"
+            android:textColorHint="#fff"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        android:layout_below="@+id/et_otp"
+        android:layout_margin="20dp"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/button_otp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:onClick="verifycode" />
+
+</RelativeLayout>
