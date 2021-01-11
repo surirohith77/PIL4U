@@ -26,12 +26,12 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp">
 
-                <ImageView
+               <!-- <ImageView
                     android:id="@+id/ivmagnifier"
                     android:layout_width="20dp"
                     android:layout_height="30dp"
                     android:layout_marginStart="10dp"
-                    android:src="@drawable/filter" />
+                    android:src="@drawable/filter" />-->
 
                 <!--<TextView
                     android:layout_width="match_parent"
@@ -51,9 +51,9 @@
                     android:layout_marginTop="3dp"
                     android:layout_height="wrap_content"
                     android:completionThreshold="1"
-                    android:layout_toEndOf="@+id/ivmagnifier"
                     android:background="@null"
                     android:textSize="16sp"
+                    android:layout_centerVertical="true"
                     android:inputType="textCapWords"
                     android:fontFamily="@font/alata_regular"
                     android:hint="Search for flats, villas..."

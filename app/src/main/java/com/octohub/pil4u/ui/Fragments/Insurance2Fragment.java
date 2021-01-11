@@ -25,8 +25,11 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.android.material.tabs.TabLayout;
+import com.octohub.pil4u.Adapter.ContentTabPagerAdapter;
 import com.octohub.pil4u.Adapter.OffersAdapter;
 import com.octohub.pil4u.Adapter.SmarateistSliderAdapterBottomFrag;
 import com.octohub.pil4u.Model.Offers;
@@ -40,6 +43,7 @@ import com.smarteist.autoimageslider.SliderView;
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 
 public class Insurance2Fragment extends Fragment implements View.OnClickListener/*, DatePickerDialog.OnDateSetListener*/,  AdapterView.OnItemSelectedListener{
 
@@ -79,15 +83,18 @@ public class Insurance2Fragment extends Fragment implements View.OnClickListener
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.insurance2_fragment,container,false);
 
-        initialize();
+        //initialize();
+
+        initializeFragments();
         intializeSLiderData();
+
 
         return view;
     }
 
     private void initialize() {
 
-        cardLife = view.findViewById(R.id.cardLife);
+    /*    cardLife = view.findViewById(R.id.cardLife);
         cardNonLife = view.findViewById(R.id.cardNonLife);
 
         cardInvestment = view.findViewById(R.id.cardInvestment);
@@ -104,7 +111,7 @@ public class Insurance2Fragment extends Fragment implements View.OnClickListener
         cardLic.setOnClickListener(this);
         cardBusinessLoan.setOnClickListener(this);
         cardMotor.setOnClickListener(this);
-        cardInvestment.setOnClickListener(this);
+        cardInvestment.setOnClickListener(this);*/
     }
 
     private void intializeSLiderData() {
@@ -139,37 +146,37 @@ public class Insurance2Fragment extends Fragment implements View.OnClickListener
 
         switch (view.getId()){
 
-            case R.id.cardLife:
+       /*     case R.id.cardLife:
 
-            /*    cardLifeCounter ++;
+            *//*    cardLifeCounter ++;
 
-                if (cardLifeCounter == 1) {*/
+                if (cardLifeCounter == 1) {*//*
                     linearLife.setVisibility(View.VISIBLE);
                     linearNonlife.setVisibility(View.GONE);
-              /*  } else {
+              *//*  } else {
 
                     linearLife.setVisibility(View.GONE);
                     linearNonlife.setVisibility(View.GONE);
                     cardLifeCounter = 0;
-                }*/
+                }*//*
 
                 break;
 
             case R.id.cardNonLife:
 
-           /*     cardNonLifeCounter ++;
+           *//*     cardNonLifeCounter ++;
 
                 if (cardNonLifeCounter == 1) {
-*/
+*//*
                     linearLife.setVisibility(View.GONE);
                     linearNonlife.setVisibility(View.VISIBLE);
 
-            /*    }
+            *//*    }
                 else {
                     linearNonlife.setVisibility(View.GONE);
                     linearLife.setVisibility(View.GONE);
                     cardNonLifeCounter = 0;
-                }*/
+                }*//*
                 break;
 
             case R.id.cardLic:
@@ -190,7 +197,7 @@ public class Insurance2Fragment extends Fragment implements View.OnClickListener
                // openBottomsheetviewINVESTMENT();
                  openBottomsheetviewLIC();
                 break;
-
+*/
         }
 
     }
@@ -315,6 +322,53 @@ public class Insurance2Fragment extends Fragment implements View.OnClickListener
 
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
+
+    }
+
+    private void initializeFragments(){
+
+        ViewPager viewPager = view.findViewById(R.id.vp_content);
+
+        List<String> tabName = new ArrayList<>();
+        tabName.add("Life Insurance");
+        tabName.add("Non Life Insurance");
+
+
+        List<Fragment> tabFragment = new ArrayList<>();
+       /* LifeInsuranceFragment lifeInsuranceFragment = new LifeInsuranceFragment();
+        NonLifeInsuranceFragment nonLifeInsuranceFragment = new NonLifeInsuranceFragment();*/
+
+       BanksFragment banksFragment = new BanksFragment();
+       CalculateEmiFragment calculateEmiFragment = new CalculateEmiFragment();
+
+
+        tabFragment.add(banksFragment);
+        tabFragment.add(calculateEmiFragment);
+
+        ContentTabPagerAdapter adapter = new ContentTabPagerAdapter(
+                getFragmentManager(),
+                tabFragment,
+                tabName);
+
+        viewPager.setAdapter(adapter);
+
+        TabLayout tabLayout = view.findViewById(R.id.tabs_content);
+        tabLayout.setupWithViewPager(viewPager);
+
+        // to disable indicator line
+        //  tabLayout.setSelectedTabIndicator(null);
+
+        //   tabLayout.setSelectedTabIndicatorColor(Color.parseColor("#FF0000"));
+        //tabLayout.setSelectedTabIndicatorHeight((int) (5 * getResources().getDisplayMetrics().density));
+
+
+        // to change the color of selected tab
+        //  tabLayout.setTabTextColors(Color.parseColor("#727272"), Color.parseColor("#01203a"));
+        tabLayout.setTabTextColors(Color.parseColor("#727272"), Color.parseColor("#ff5a5f"));
+
+
+        //    cardSearch.setOnClickListener(this);
+
 
     }
 }

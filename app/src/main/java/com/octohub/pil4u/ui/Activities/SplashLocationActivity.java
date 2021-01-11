@@ -11,6 +11,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.octohub.pil4u.R;
 import com.octohub.pil4u.utils.AccoutUtils;
 
@@ -23,6 +24,9 @@ public class SplashLocationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_location);
+
+        ImageView imageView = findViewById(R.id.ivLocation);
+        Glide.with(this).load(R.drawable.pil_gig).into(imageView);
 
        // ivLocation = findViewById(R.id.ivLocation);
         tvAddress1 = findViewById(R.id.tvAddress1);
@@ -46,7 +50,7 @@ public class SplashLocationActivity extends AppCompatActivity {
                 AnimationUtils.loadAnimation(getApplicationContext(), R.anim.lefttoright);
         tvAddress2.startAnimation(animation3);*/
 
-        long postDelayTime = 3000;
+        long postDelayTime = 5000;
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

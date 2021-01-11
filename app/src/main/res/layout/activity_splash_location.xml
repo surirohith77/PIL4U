@@ -6,16 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".ui.Activities.SplashLocationActivity">
 
-  <!--  <ImageView
+    <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
+        android:layout_height="250dp"
         android:src="@drawable/location2"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="30dp"
-        android:id="@+id/ivLocation"/>-->
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/ivLocation"
+        android:layout_centerHorizontal="true"/>
 
-    <com.airbnb.lottie.LottieAnimationView
+    <!--<com.airbnb.lottie.LottieAnimationView
         android:id="@+id/ivLocation"
         android:layout_width="match_parent"
         android:layout_height="250dp"
@@ -25,7 +26,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         app:lottie_loop="true"
-     />
+     />-->
 
     <TextView
         android:layout_width="match_parent"

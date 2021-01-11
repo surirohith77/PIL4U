@@ -48,4 +48,8 @@
     </style>
 
 
+    <style name="btn">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">18sp</item>
+    </style>
 </resources>

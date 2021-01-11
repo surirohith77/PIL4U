@@ -37,8 +37,11 @@ import com.octohub.pil4u.Adapter.PopularHousesAdapter;
 import com.octohub.pil4u.Adapter.SliderPagerAdapter;
 import com.octohub.pil4u.Adapter.SmarateistSliderAdapterBottomFrag;
 import com.octohub.pil4u.Listener.RvListener;
+import com.octohub.pil4u.Model.SliderItem;
 import com.octohub.pil4u.R;
 import com.octohub.pil4u.ui.Activities.SearchviewActivity;
+import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
+import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;
 
 import java.util.ArrayList;
@@ -168,9 +171,35 @@ public class InsuranceSearchFragment extends Fragment implements RvListener {
         editText.setAdapter(adapter);
 
         intializeSeekbar();
+        intializeSLiderData();
         initializeFragments();
 
        return  view;
+    }
+
+    private void intializeSLiderData() {
+
+        sliderView = view.findViewById(R.id.imageSlider);
+
+        smarateistSliderAdapter = new SmarateistSliderAdapterBottomFrag(activity);
+        sliderView.setSliderAdapter(smarateistSliderAdapter);
+        sliderView.setIndicatorAnimation(IndicatorAnimationType.DROP); //set indicator animation by using SliderLayout.IndicatorAnimations. :WORM or THIN_WORM or COLOR or DROP or FILL or NONE or SCALE or SCALE_DOWN or SLIDE and SWAP!!
+        sliderView.setSliderTransformAnimation(SliderAnimations.ZOOMOUTTRANSFORMATION);
+        sliderView.setAutoCycleDirection(SliderView.AUTO_CYCLE_DIRECTION_BACK_AND_FORTH);
+        sliderView.setIndicatorSelectedColor(Color.WHITE);
+        sliderView.setIndicatorUnselectedColor(Color.GRAY);
+        sliderView.setScrollTimeInSec(3);
+        sliderView.setAutoCycle(true);
+        sliderView.startAutoCycle();
+
+
+        sliderLIst = new ArrayList();
+        sliderLIst.add(new SliderItem("Insurance1",R.drawable.insurance_slider1));
+        sliderLIst.add(new SliderItem("Insurance2",R.drawable.insurance_slider2));
+        sliderLIst.add(new SliderItem("Insurance3",R.drawable.insurance_slider3));
+        //sliderLIst.add(new SliderItem("With 4 bed rooms",R.drawable.insidehouse3));
+
+        smarateistSliderAdapter.renewItems(sliderLIst);
     }
 
     private void initializeFragments(){
@@ -179,17 +208,26 @@ public class InsuranceSearchFragment extends Fragment implements RvListener {
         ViewPager viewPager = view.findViewById(R.id.vp_content);
 
         List<String> tabName = new ArrayList<>();
-        tabName.add("Home");
+        //tabName.add("Home");
+        tabName.add("Life");
+        tabName.add("Non Life");
        /* tabName.add("Faqs");
         tabName.add("Reviews");*/
 
 
         List<Fragment> tabFragment = new ArrayList<>();
       // InsuranceFragment insuranceFragment = new InsuranceFragment();
-      Insurance2Fragment insuranceFragment = new Insurance2Fragment();
+     /* Insurance2Fragment insuranceFragment = new Insurance2Fragment();
 
 
-        tabFragment.add(insuranceFragment);
+        tabFragment.add(insuranceFragment);*/
+
+    LifeInsuranceFragment lifeInsuranceFragment = new LifeInsuranceFragment();
+        NonLifeInsuranceFragment nonLifeInsuranceFragment = new NonLifeInsuranceFragment();
+
+
+        tabFragment.add(lifeInsuranceFragment);
+        tabFragment.add(nonLifeInsuranceFragment);
 
 
         ContentTabPagerAdapter adapter = new ContentTabPagerAdapter(
@@ -296,4 +334,6 @@ public class InsuranceSearchFragment extends Fragment implements RvListener {
     public void Rvclick(View view, int Position) {
 
     }
+
+
 }

@@ -66,7 +66,7 @@ public class BottomHomeFragment extends Fragment implements RvListener {
 
     BottomMainAdapter bottomMainAdapter;
 
-    RecyclerView rv, rvPropertires, rvPopularHOuses, rvRecents, rvBottomdata;
+    RecyclerView rv, rvPropertires, rvPopularHOuses, rvRecents, rvBottomdata, rvBudgetable;
     Toolbar toolbar;
     private final Handler mHandler = new Handler(Looper.getMainLooper());
     final int duration = 10;
@@ -84,8 +84,8 @@ public class BottomHomeFragment extends Fragment implements RvListener {
     ArrayList sliderLIst;
     int seekbarCounter = 0;
   //  private SeekBar seekBar;
-  TextView tvResidential,tvCommercial;
-    LinearLayout linearResidential, linearCommercial;
+  TextView tvResidential,tvCommercial, tvProjects;
+    LinearLayout linearResidential, linearCommercial, linearProjects;
     RelativeLayout relativeMoreProperties;
     TextView tvMoreProperties;
 
@@ -101,7 +101,10 @@ public class BottomHomeFragment extends Fragment implements RvListener {
         @Override
         public void run() {
             rv.smoothScrollBy(pixelsToMove, 0);
+            rvPopularHOuses.smoothScrollBy(pixelsToMove, 0);
+            rvPropertires.smoothScrollBy(pixelsToMove, 0);
             mHandler.postDelayed(this, duration);
+
         }
     };
 
@@ -165,17 +168,16 @@ public class BottomHomeFragment extends Fragment implements RvListener {
        initializeRecyclerview();
        intializeFeatureRecyclerview();
 
-     intializRecentsRecyclerview();
+        intializRecentsRecyclerview();
         intializePopularHousesRecyclerview();
         RvPOpularHouses();
 
        initilazeRvMain();
+        initializeRvBudgetBle();
        initializeRvProperties();
 
         intializBottomMainRecyclerview();
        setRvBottomdata();
-
-
 
        return  view;
     }
@@ -287,9 +289,11 @@ public class BottomHomeFragment extends Fragment implements RvListener {
 
         tvResidential = view.findViewById(R.id.tvResidential);
         tvCommercial = view.findViewById(R.id.tvCommercial);
+        tvProjects = view.findViewById(R.id.tvProjects);
 
         linearResidential = view.findViewById(R.id.linearResidential);
         linearCommercial = view.findViewById(R.id.linearCommercial);
+        linearProjects = view.findViewById(R.id.linearProjects);
 
 
         tvMoreProperties = view.findViewById(R.id.tvMoreProperties);
@@ -303,11 +307,13 @@ public class BottomHomeFragment extends Fragment implements RvListener {
 
                 linearCommercial.setVisibility(View.GONE);
                 linearResidential.setVisibility(View.VISIBLE);
+                linearProjects.setVisibility(View.GONE);
               /*  tvResidential.setTextColor(R.color.color_site);
                 tvCommercial.setTextColor(R.color.color_text_bg);*/
 
                 tvResidential.setTextColor(Color.parseColor("#ff5a5f"));
                 tvCommercial.setTextColor(Color.parseColor("#d5d5d6"));
+                tvProjects.setTextColor(Color.parseColor("#d5d5d6"));
 
             }
         });
@@ -319,9 +325,29 @@ public class BottomHomeFragment extends Fragment implements RvListener {
 
                 linearCommercial.setVisibility(View.VISIBLE);
                 linearResidential.setVisibility(View.GONE);
+                linearProjects.setVisibility(View.GONE);
 
-                tvResidential.setTextColor(Color.parseColor("#d5d5d6"));
                 tvCommercial.setTextColor(Color.parseColor("#ff5a5f"));
+                tvResidential.setTextColor(Color.parseColor("#d5d5d6"));
+                tvProjects.setTextColor(Color.parseColor("#d5d5d6"));
+
+
+            }
+        });
+
+        tvProjects.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceAsColor")
+            @Override
+            public void onClick(View view) {
+
+                linearProjects.setVisibility(View.VISIBLE);
+                linearCommercial.setVisibility(View.GONE);
+                linearResidential.setVisibility(View.GONE);
+
+                tvProjects.setTextColor(Color.parseColor("#ff5a5f"));
+                tvResidential.setTextColor(Color.parseColor("#d5d5d6"));
+                tvCommercial.setTextColor(Color.parseColor("#d5d5d6"));
+
 
 
             }
@@ -419,7 +445,7 @@ public class BottomHomeFragment extends Fragment implements RvListener {
         rv.setLayoutManager(layoutManager);
 
         // to automatically scroll the recyclerview
-        rv.addOnScrollListener(new RecyclerView.OnScrollListener() {
+       /* rv.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
@@ -433,14 +459,14 @@ public class BottomHomeFragment extends Fragment implements RvListener {
                         public void run() {
                             rv.setAdapter(null);
                             rv.setAdapter(adapter);
-                            mHandler.postDelayed(SCROLLING_RUNNABLE, 5000);
+                            mHandler.postDelayed(SCROLLING_RUNNABLE, 10000);
                         }
                     }, 5000);
                 }
             }
         });
         mHandler.postDelayed(SCROLLING_RUNNABLE, 5000);
-
+*/
     }
 
     private void intializeFeatureRecyclerview() {
@@ -449,7 +475,31 @@ public class BottomHomeFragment extends Fragment implements RvListener {
         rvPropertires.setHasFixedSize(true);
         rvPropertires.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
 
+       /* rvPropertires.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
+                super.onScrolled(recyclerView, dx, dy);
+
+                int lastItem = layoutManager.findLastCompletelyVisibleItemPosition();
+                if (lastItem == layoutManager.getItemCount() - 1) {
+                    mHandler.removeCallbacks(SCROLLING_RUNNABLE);
+                    Handler postHandler = new Handler();
+                    postHandler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            rvPropertires.setAdapter(null);
+                            rvPropertires.setAdapter(popularHousesAdapter);
+                            mHandler.postDelayed(SCROLLING_RUNNABLE, 10000);
+                        }
+                    }, 10000);
+                }
+            }
+        });
+        mHandler.postDelayed(SCROLLING_RUNNABLE, 10000);*/
+
     }
+
+
 
     private void initilazeRvMain() {
 
@@ -478,6 +528,8 @@ public class BottomHomeFragment extends Fragment implements RvListener {
         iconFoods.add(new iconslider(R.drawable.food2,"Rohith Suri"));*/
         propertiesAdapter = new FeaturedPropertiesAdapter(this,propertiesList);
         rvPropertires.setAdapter(propertiesAdapter);
+
+        rvBudgetable.setAdapter(propertiesAdapter);
     }
 
     @Override
@@ -492,6 +544,34 @@ public class BottomHomeFragment extends Fragment implements RvListener {
         rvPopularHOuses = view.findViewById(R.id.rvAds);
         rvPopularHOuses.setHasFixedSize(true);
         rvPopularHOuses.setLayoutManager(new LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false));
+
+      //getWindow().getDecorView().setLayoutDirection(View.LAYOUT_DIRECTION_RTL);
+
+        //  GravitySnapHelper(Gravity.END)
+
+/*
+        rvPopularHOuses.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
+                super.onScrolled(recyclerView, dx, dy);
+
+                int lastItem = layoutManager.findLastCompletelyVisibleItemPosition();
+                if (lastItem == layoutManager.getItemCount() - 1) {
+                    mHandler.removeCallbacks(SCROLLING_RUNNABLE);
+                    Handler postHandler = new Handler();
+                    postHandler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            rvPopularHOuses.setAdapter(null);
+                            rvPopularHOuses.setAdapter(popularHousesAdapter);
+                            mHandler.postDelayed(SCROLLING_RUNNABLE, 10000);
+                        }
+                    }, 10000);
+                }
+            }
+        });
+        mHandler.postDelayed(SCROLLING_RUNNABLE, 5000);*/
+
 
     }
 
@@ -513,6 +593,13 @@ public class BottomHomeFragment extends Fragment implements RvListener {
 
     }
 
+    private void initializeRvBudgetBle(){
+
+        rvBudgetable = view.findViewById(R.id.rvBudgetable);
+        rvBudgetable.setHasFixedSize(true);
+        rvBudgetable.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+    }
+
     private void RvPOpularHouses() {
 
 
@@ -530,6 +617,8 @@ public class BottomHomeFragment extends Fragment implements RvListener {
 
         popularHousesAdapter = new PopularHousesAdapter(popularHousesList);
         rvPopularHOuses.setAdapter(popularHousesAdapter);
+
+
 
         rvRecents.setAdapter(popularHousesAdapter);
 

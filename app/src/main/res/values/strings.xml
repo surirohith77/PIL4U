@@ -169,5 +169,8 @@ Fully furnished. Elegantly appointed condominium unit situated on premier locati
         <item>Medical Loan</item>
         <item>Vacation Loan</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_ok">Select Images</string>
 
 </resources>

@@ -22,12 +22,12 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="5dp">
 
-            <ImageView
+          <!--  <ImageView
                 android:id="@+id/ivmagnifier"
                 android:layout_width="20dp"
                 android:layout_height="30dp"
                 android:layout_marginStart="10dp"
-                android:src="@drawable/filter" />
+                android:src="@drawable/filter" />-->
 
          <!--   <TextView
                 android:layout_width="match_parent"
@@ -52,6 +52,7 @@
                 android:inputType="textCapWords"
                 android:fontFamily="@font/alata_regular"
                 android:hint="Search for Loan..."
+                android:layout_centerVertical="true"
                 android:popupBackground="@color/colorAccent" />
 
             <!--<TextView
@@ -143,7 +144,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:fontFamily="@font/alata_regular"
-        android:text="Check CIVIL SCORE"
+        android:text="Check CIBIL SCORE"
         android:textAlignment="center"
         android:textColor="#fff"
         android:background="#39b54a"

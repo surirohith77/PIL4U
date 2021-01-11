@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.Fragments.LifeInsuranceFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearResidential"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/covid_nurse"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="2dp"
+            app:cardCornerRadius="20dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/cardLife"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="COVID-19 Health Insurance "
+                    android:fontFamily="@font/alata_regular"
+                    android:textAlignment="center"
+                    android:textSize="9sp"
+                    android:maxLines="2"
+                    android:id="@+id/tvHealthIns"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="Enquiry Now"
+                    android:layout_below="@+id/tvHealthIns"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/button_yellow_insu"
+                    android:textColor="#fff"
+                    android:textSize="8sp"
+                    android:fontFamily="@font/alata_regular"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="15dp"
+            app:cardCornerRadius="20dp"
+            android:id="@+id/cardGeneral"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="General insurance "
+                    android:fontFamily="@font/alata_regular"
+                    android:textAlignment="center"
+                    android:textSize="9sp"
+                    android:id="@+id/tvGeneralIns"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/ivicon6"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="Enquiry Now"
+                    android:layout_below="@+id/tvGeneralIns"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/button_yellow_insu"
+                    android:textColor="#fff"
+                    android:textSize="8sp"
+                    android:fontFamily="@font/alata_regular"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvLifeInsurance"
+            android:layout_marginBottom="100dp"
+            />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

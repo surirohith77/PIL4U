@@ -10,16 +10,30 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/pil4u_logo7"
+        android:icon="@drawable/pil4u_logo9"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/pil4u_logo7"
+        android:roundIcon="@drawable/pil4u_logo9"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.Activities.CustomGalleryActivity">
+            <intent-filter>
+                <action android:name="pil4u.ACTION_PICK" />
+                <action android:name="pil4u.ACTION_MULTIPLE_PICK" />
 
-        <activity android:name=".ui.Activities.CheckCivilScoreActivity"
-            android:parentActivityName=".ui.Activities.KYCRegisterationActivity"/>
-        <activity android:name=".ui.Activities.KYCRegisterationActivity"
-            android:parentActivityName=".ui.Activities.MainActivity3"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.Activities.AddFreeImagesPickrActivity">
+
+        </activity>
+        <activity android:name=".ui.Activities.AddFreePlacePickerActivity" />
+        <activity android:name=".ui.Activities.AddFreeActivity" />
+        <activity
+            android:name=".ui.Activities.CheckCivilScoreActivity"
+            android:parentActivityName=".ui.Activities.KYCRegisterationActivity" />
+        <activity
+            android:name=".ui.Activities.KYCRegisterationActivity"
+            android:parentActivityName=".ui.Activities.MainActivity3" />
         <activity
             android:name=".ui.Activities.AdvertiseActivity"
             android:parentActivityName=".ui.Activities.MainActivity3" />
@@ -78,7 +92,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCb5B4eUn0R8ZOVpi2l-ZvbNBC4hok6ISk" />
+            android:value="AIzaSyCRXrfv5CD95ramaXxHkDKShaR2YCJEu3g" />
     </application>
 
 </manifest>

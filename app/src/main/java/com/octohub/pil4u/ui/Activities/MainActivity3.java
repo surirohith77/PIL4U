@@ -130,14 +130,27 @@ public class MainActivity3 extends AppCompatActivity  /*implements BanksFragment
                             break;
 
                         case R.id.loans:
-                            //startActivity(new Intent(MainActivity3.this, AdvFragment.class));
+                                //startActivity(new Intent(MainActivity3.this, AdvFragment.class));
                          /*   final Fragment fragmentAdv = new AdvFragment();
                             Fragment fragment2 = fragmentAdv;*/
 
-                         //   menuItem.setIcon(R.drawable.ic_outline_account_balance_24);
+                                //   menuItem.setIcon(R.drawable.ic_outline_account_balance_24);
 
-                            selectedFragment = new LoanFragment();
+                                selectedFragment = new LoanFragment();
                             fragmentManager.beginTransaction().replace(R.id.frameLayout, selectedFragment).commitAllowingStateLoss();
+                         /*   bottomNavigationView.setItemIconTintList(null);
+                            menuItem.setIcon(R.drawable.loan_bnv);*/
+
+                            break;
+
+                        case R.id.addfree:
+                                //startActivity(new Intent(MainActivity3.this, AdvFragment.class));
+                         /*   final Fragment fragmentAdv = new AdvFragment();
+                            Fragment fragment2 = fragmentAdv;*/
+
+                                //   menuItem.setIcon(R.drawable.ic_outline_account_balance_24);
+
+                            startActivity(new Intent(MainActivity3.this, AddFreeActivity.class));
                          /*   bottomNavigationView.setItemIconTintList(null);
                             menuItem.setIcon(R.drawable.loan_bnv);*/
 
@@ -195,7 +208,21 @@ public class MainActivity3 extends AppCompatActivity  /*implements BanksFragment
 
         }
 
-        relativeToolbar.setOnClickListener(new View.OnClickListener() {
+        tvTool1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(MainActivity3.this, LocationPreferenceActivities.class));
+            }
+        });
+        tvTool2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(MainActivity3.this, LocationPreferenceActivities.class));
+            }
+        });
+        tvTool3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

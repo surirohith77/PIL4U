@@ -7,6 +7,7 @@ import androidx.core.content.ContextCompat;
 
 import android.Manifest;
 import android.accounts.Account;
+import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -42,6 +43,7 @@ import com.google.android.gms.tasks.Task;
 import com.octohub.pil4u.Locationn.GPSTracker;
 import com.octohub.pil4u.R;
 import com.octohub.pil4u.utils.AccoutUtils;
+import com.octohub.pil4u.utils.ViewWeightAnimationWrapper;
 
 import java.io.IOException;
 import java.text.DateFormat;
@@ -93,6 +95,7 @@ public class PlacrPickerActivity extends AppCompatActivity implements OnMapReady
     TextView tapthemap;
     String address, area, state, subLocality;
     Double latAutoSearch, lngAutoSearch;
+    private int mMapLayoutState = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -561,6 +564,7 @@ public class PlacrPickerActivity extends AppCompatActivity implements OnMapReady
             }
         }
     }
+
 
 
 }

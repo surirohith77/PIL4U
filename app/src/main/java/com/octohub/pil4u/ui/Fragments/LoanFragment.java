@@ -81,9 +81,8 @@ public class LoanFragment extends Fragment implements View.OnClickListener{
        view = inflater.inflate(R.layout.loans_fragment,container,false);
 
 
-
      initialize();
-       initializeSearchbarSeekbar();
+       //initializeSearchbarSeekbar();
 
         Button btnCheckCivil = view.findViewById(R.id.btnCheckCivil);
         btnCheckCivil.setOnClickListener(new View.OnClickListener() {
@@ -106,7 +105,7 @@ public class LoanFragment extends Fragment implements View.OnClickListener{
        return  view;
     }
 
-    private void initializeSearchbarSeekbar() {
+  /*  private void initializeSearchbarSeekbar() {
 
         ImageView ivFilter = view.findViewById(R.id.ivmagnifier);
         final RelativeLayout relativeSeek = view.findViewById(R.id.relativeSeek);
@@ -130,15 +129,21 @@ public class LoanFragment extends Fragment implements View.OnClickListener{
         });
 
         intializeSeekbar();
-    }
+    }*/
+/*
 
     private void intializeSeekbar() {
 
-      /*  seekBar = (SeekBar) view.findViewById(R.id.seekBar);
+      */
+/*  seekBar = (SeekBar) view.findViewById(R.id.seekBar);
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-              *//*  progressBar.setProgress(progress);*//*
+              *//*
+*/
+/*  progressBar.setProgress(progress);*//*
+*/
+/*
              //   textView.setText("" + progress + "%");
                 Toast.makeText(activity, "" + progress + "%", Toast.LENGTH_SHORT).show();
             }
@@ -148,10 +153,12 @@ public class LoanFragment extends Fragment implements View.OnClickListener{
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
             }
-        });*/
+        });*//*
 
 
-      /*  RangeSeekBar rangeSeekBar ;
+
+      */
+/*  RangeSeekBar rangeSeekBar ;
         rangeSeekBar = view.findViewById(R.id.rangeseekabr);
         rangeSeekBar.setRangeValues(3000, 15000);
         rangeSeekBar.setSelectedMinValue(3000);
@@ -170,7 +177,8 @@ public class LoanFragment extends Fragment implements View.OnClickListener{
                 Toast.makeText(activity, "min"+min+"  max"+max, Toast.LENGTH_SHORT).show();
 
             }
-        });*/
+        });*//*
+
 
         // get seekbar from view
         final CrystalRangeSeekbar rangeSeekbar = (CrystalRangeSeekbar) view.findViewById(R.id.rangeSeekbar6);
@@ -182,17 +190,21 @@ public class LoanFragment extends Fragment implements View.OnClickListener{
         // set properties
         rangeSeekbar
                 .setCornerRadius(10f)
-                /* .setBarColor(Color.parseColor("#93F9B5"))
-                 .setBarHighlightColor(Color.parseColor("#16E059"))*/
+                */
+/* .setBarColor(Color.parseColor("#93F9B5"))
+                 .setBarHighlightColor(Color.parseColor("#16E059"))*//*
+
                 .setMinValue(4000)
                 .setMaxValue(8000)
                 .setMinStartValue(5000)
                 .setMaxStartValue(7500)
                 .setSteps(100)
-                /* .setLeftThumbDrawable(R.drawable.pil4u_logo5_24dp)
+                */
+/* .setLeftThumbDrawable(R.drawable.pil4u_logo5_24dp)
                  .setLeftThumbHighlightDrawable(R.drawable.pil4u_logo5_24dp)
                  .setRightThumbDrawable(R.drawable.pil4u_logo5_24dp)
-                 .setRightThumbHighlightDrawable(R.drawable.pil4u_logo5_24dp)*/
+                 .setRightThumbHighlightDrawable(R.drawable.pil4u_logo5_24dp)*//*
+
                 .setDataType(CrystalRangeSeekbar.DataType.INTEGER)
                 .apply();
 
@@ -206,6 +218,8 @@ public class LoanFragment extends Fragment implements View.OnClickListener{
         });
 
     }
+*/
+
     private void initialize(){
 
         linearLayout2 = view.findViewById(R.id.linear2);

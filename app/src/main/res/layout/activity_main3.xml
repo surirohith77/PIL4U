@@ -35,6 +35,16 @@
         >
     </FrameLayout>
 
+
+       <!-- <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gmail4"
+            android:layout_gravity="bottom|center"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp"/>-->
+
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

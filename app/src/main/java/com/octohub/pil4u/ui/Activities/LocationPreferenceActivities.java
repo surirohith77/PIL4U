@@ -56,7 +56,7 @@ public class LocationPreferenceActivities extends AppCompatActivity implements V
     private static final String TYPE_AUTOCOMPLETE = "/autocomplete";
     private static final String OUT_JSON = "/json";
    // private static final String API_KEY = "AIzaSyAQtAA5jwBQlfkDjVHa7-cVmq_YJ7GyGDU";
-    private static final String API_KEY = "AIzaSyCb5B4eUn0R8ZOVpi2l-ZvbNBC4hok6ISk";
+    private static final String API_KEY = "AIzaSyCRXrfv5CD95ramaXxHkDKShaR2YCJEu3g";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
